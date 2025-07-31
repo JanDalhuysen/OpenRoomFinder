@@ -2,6 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const fs = require('fs');
 
 const locations = require('./data/locations.json');
 const {getRoomSchedule} = require('./utils/timetable');
@@ -61,15 +62,41 @@ app.post('/find', async (req, res) => {
         }
 
         // 2. Fetch all schedules concurrently
-        console.log(`Fetching schedules for ${day}, week ${week}, slot ${timeSlot.start}...`);
-        const schedulePromises = locations.map(loc => getRoomSchedule(loc.name, week, day));
+        // console.log(`Fetching schedules for ${day}, week ${week}, slot ${timeSlot.start}...`);
+
+        const dataDir = path.join(__dirname, 'data');
+        const roomFiles = fs.readdirSync(dataDir).filter(file => file.endsWith('_rooms.txt'));
+
+        let allRooms = [];
+        for (const file of roomFiles)
+        {
+            const buildingName = file.replace('_rooms.txt', '').replace(/_/g, '');
+            console.log(`Processing building: ${buildingName}`);
+            const rooms = fs.readFileSync(path.join(dataDir, file), 'utf-8').split('\n').filter(Boolean);
+            const building =
+                locations.find(loc => loc.building.toLowerCase().replace(' ', '').includes(buildingName.toLowerCase()));
+
+            if (building)
+            {
+                allRooms.push(...rooms.map(room => ({
+                                               name : room,
+                                               building : building.building,
+                                               lat : building.lat,
+                                               lon : building.lon,
+                                               id : building.id
+                                           })));
+            }
+        }
+
+        console.log("All rooms found:", allRooms);
+        const schedulePromises = allRooms.map(room => getRoomSchedule(room.name, week, day));
+
         const schedules = await Promise.all(schedulePromises);
         console.log('Schedules fetched.');
 
         // 3. Filter for available rooms
-        const availableRooms = locations.filter((location, index) => {
+        const availableRooms = allRooms.filter((room, index) => {
             const roomSchedule = schedules[index];
-            // A room is available if its schedule does NOT include the current time slot's start time
             return !roomSchedule.includes(timeSlot.start);
         });
 
@@ -87,7 +114,7 @@ app.post('/find', async (req, res) => {
         //             return {...room, totalDistance};
         //         })
         //         .sort((a, b) => a.totalDistance - b.totalDistance); // Sort by shortest total distance
-        
+
         // 5. Rank available rooms by distance
         const rankedRooms = availableRooms
                                 .map(room => {
@@ -101,6 +128,7 @@ app.post('/find', async (req, res) => {
 
         // 6. Render the results
         res.render('results', {rooms : rankedRooms, timeSlot});
+        console.log(rankedRooms);
     }
     catch (error)
     {
