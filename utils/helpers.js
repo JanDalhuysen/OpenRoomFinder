@@ -42,7 +42,7 @@ function getCurrentTimeSlot() {
     const now = new Date();
     const hour = now.getHours();
 
-    if (hour < 8 || hour >= 17) return null; // Outside of uni hours
+    // if (hour < 8 || hour >= 17) return null; // Outside of uni hours
 
     const startTime = `${String(hour).padStart(2, '0')}:00`;
     const endTime = `${String(hour + 1).padStart(2, '0')}:00`;

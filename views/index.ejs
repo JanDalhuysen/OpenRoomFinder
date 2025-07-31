@@ -1,36 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find an Empty Room</title>
     <style>
-        body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; padding: 1rem; }
-        form { display: flex; flex-direction: column; gap: 1rem; }
-        label { font-weight: bold; }
-        select, button { padding: 0.5rem; font-size: 1rem; }
-        button { background-color: #007bff; color: white; border: none; cursor: pointer; }
+      body {
+        font-family: sans-serif;
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 1rem;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      label {
+        font-weight: bold;
+      }
+      select,
+      button {
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Find an Empty Room 📍</h1>
-    <p>Select your last class and your next class. The app will find the most convenient empty room for you to use during your off-period right now.</p>
+    <p>
+      Select your last class and your next class. The app will find the most
+      convenient empty room for you to use during your off-period right now.
+    </p>
     <form action="/find" method="POST">
-        <label for="lastClass">Where was your last class?</label>
-        <select name="lastClass" id="lastClass" required>
-            <% locations.forEach(loc => { %>
-                <option value="<%= loc.id %>"><%= loc.building %> - <%= loc.name %></option>
-            <% }); %>
-        </select>
+      <input type="hidden" name="latitude" id="latitude" />
+      <input type="hidden" name="longitude" id="longitude" />
+      <label for="lastClass">Where was your last class?</label>
+      <select name="lastClass" id="lastClass" required>
+        <% locations.forEach(loc => { %>
+        <option value="<%= loc.id %>">
+          <%= loc.building %> - <%= loc.name %>
+        </option>
+        <% }); %>
+      </select>
 
-        <label for="nextClass">Where is your next class?</label>
-        <select name="nextClass" id="nextClass" required>
-             <% locations.forEach(loc => { %>
-                <option value="<%= loc.id %>"><%= loc.building %> - <%= loc.name %></option>
-            <% }); %>
-        </select>
+      <!-- Add this button -->
+      <button type="button" id="getLocationBtn">
+        📍 Use My Current Location
+      </button>
+      <p id="locationStatus" style="color: #555"></p>
+      <!-- To show status -->
 
-        <button type="submit">Find Room</button>
+      <label for="lastClass">Or select where your last class was:</label>
+
+      <label for="nextClass">Where is your next class?</label>
+      <select name="nextClass" id="nextClass" required>
+        <% locations.forEach(loc => { %>
+        <option value="<%= loc.id %>">
+          <%= loc.building %> - <%= loc.name %>
+        </option>
+        <% }); %>
+      </select>
+
+      <button type="submit">Find Room</button>
     </form>
-</body>
+  </body>
+  <script>
+    const getLocationBtn = document.getElementById("getLocationBtn");
+    const statusEl = document.getElementById("locationStatus");
+    const latInput = document.getElementById("latitude");
+    const lonInput = document.getElementById("longitude");
+    const lastClassSelect = document.getElementById("lastClass");
+
+    getLocationBtn.addEventListener("click", () => {
+      if (!navigator.geolocation) {
+        statusEl.textContent = "Geolocation is not supported by your browser.";
+        return;
+      }
+
+      statusEl.textContent = "Getting your location...";
+
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const latitude = position.coords.latitude;
+          const longitude = position.coords.longitude;
+
+          // Populate the hidden form fields
+          latInput.value = latitude;
+          lonInput.value = longitude;
+
+          statusEl.textContent = `✅ Location captured! (${latitude.toFixed(4)}, ${longitude.toFixed(4)})`;
+          statusEl.style.color = "green";
+
+          // Disable the dropdown to avoid confusion
+          lastClassSelect.disabled = true;
+          lastClassSelect.required = false;
+        },
+        () => {
+          statusEl.textContent =
+            "Unable to retrieve your location. Please select a building manually.";
+          statusEl.style.color = "red";
+        },
+      );
+    });
+  </script>
 </html>
