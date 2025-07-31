@@ -1,0 +1,4621 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-07-31T11:25:15Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/281944",
+        "addr:postcode": "7599",
+        "addr:street": "Claassen Street",
+        "building": "dormitory",
+        "building:levels": "3",
+        "name": "Nerina",
+        "type": "multipolygon",
+        "website": "https://nerinaresidence.co.za",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8708614,
+          -33.9353754
+        ]
+      },
+      "id": "relation/281944"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3236799",
+        "building": "dormitory",
+        "name": "Heemstede",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8687785,
+          -33.9354402
+        ]
+      },
+      "id": "relation/3236799"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3236800",
+        "building": "dormitory",
+        "name": "Huis Ten Bosch",
+        "name:af": "Huis Ten Bosch Dameskoshuis",
+        "name:en": "Huis Ten Bosch Women's Residence",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8689035,
+          -33.9347236
+        ]
+      },
+      "id": "relation/3236800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3363555",
+        "building": "university",
+        "name": "Van Der Sterr",
+        "operator": "Stellenbosch University",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8673834,
+          -33.9331487
+        ]
+      },
+      "id": "relation/3363555"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3363557",
+        "building": "university",
+        "name": "Chemistry",
+        "operator": "Stellenbosch University",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8672343,
+          -33.9320591
+        ]
+      },
+      "id": "relation/3363557"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3363563",
+        "building": "dormitory",
+        "name": "Majuba",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8699109,
+          -33.9330305
+        ]
+      },
+      "id": "relation/3363563"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3363577",
+        "building": "dormitory",
+        "name": "Sonop",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8709196,
+          -33.9328916
+        ]
+      },
+      "id": "relation/3363577"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3363580",
+        "building": "dormitory",
+        "name": "Irene",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8719557,
+          -33.9325755
+        ]
+      },
+      "id": "relation/3363580"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3363581",
+        "addr:city": "Stellenbosch",
+        "addr:postcode": "7599",
+        "addr:street": "Merriman Street",
+        "building": "dormitory",
+        "internet_access": "wlan",
+        "name": "Simonsberg",
+        "type": "multipolygon",
+        "website": "https://www0.sun.ac.za/simonsberg/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8700343,
+          -33.9316042
+        ]
+      },
+      "id": "relation/3363581"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3363582",
+        "building": "university",
+        "name": "De Beers",
+        "operator": "Stellenbosch University",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8660501,
+          -33.931882
+        ]
+      },
+      "id": "relation/3363582"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3363703",
+        "building": "university",
+        "name": "Administration A",
+        "operator": "Stellenbosch University",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8631715,
+          -33.9328845
+        ]
+      },
+      "id": "relation/3363703"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3363704",
+        "building": "university",
+        "name": "Chamber of Mining / Geology",
+        "name:af": "Kamer van Mynwese / Geologie",
+        "operator": "Stellenbosch University",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8625132,
+          -33.9323936
+        ]
+      },
+      "id": "relation/3363704"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3363705",
+        "building": "university",
+        "name": "Natural Science",
+        "name:af": "Natuurwetenskappe",
+        "operator": "Stellenbosch University",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8632416,
+          -33.9321361
+        ]
+      },
+      "id": "relation/3363705"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3363706",
+        "building": "university",
+        "name": "Industrial Psychology",
+        "name:af": "Bedryfsielkunde",
+        "operator": "Stellenbosch University",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8642124,
+          -33.9320143
+        ]
+      },
+      "id": "relation/3363706"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3363707",
+        "addr:city": "Stellenbosch",
+        "addr:street": "Ryneveld",
+        "building": "university",
+        "name": "Krotoa",
+        "operator": "Stellenbosch University",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8627082,
+          -33.9336951
+        ]
+      },
+      "id": "relation/3363707"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3363715",
+        "building": "university",
+        "name": "GG Cillié",
+        "operator": "Stellenbosch University",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8617416,
+          -33.9328067
+        ]
+      },
+      "id": "relation/3363715"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3363716",
+        "addr:city": "Stellenbosch",
+        "addr:street": "Ryneveld",
+        "building": "university",
+        "name": "Ou Hoofgebou",
+        "operator": "Stellenbosch University",
+        "type": "multipolygon",
+        "wikidata": "Q50132193",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.861806,
+          -33.9338013
+        ]
+      },
+      "id": "relation/3363716"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/3376527",
+        "building": "dormitory",
+        "name": "Metanoia",
+        "name:af": "Metanoia Koshuis",
+        "name:en": "Metanoia Residence",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8698857,
+          -33.9354243
+        ]
+      },
+      "id": "relation/3376527"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/4430396",
+        "building": "dormitory",
+        "name": "Erica",
+        "name:af": "Erica Dameskoshuis",
+        "name:en": "Erica Women's Residence",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8719046,
+          -33.9353857
+        ]
+      },
+      "id": "relation/4430396"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/4430397",
+        "building": "dormitory",
+        "name": "Nemesia",
+        "name:af": "Nemesia Dameskoshuis",
+        "name:en": "Nemesia Women's Residence",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8724014,
+          -33.9353553
+        ]
+      },
+      "id": "relation/4430397"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/4430398",
+        "building": "dormitory",
+        "name": "Serruria",
+        "name:af": "Serruria Dameskoshuis",
+        "name:en": "Serruria Women's Residence",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8729003,
+          -33.9353292
+        ]
+      },
+      "id": "relation/4430398"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/4430416",
+        "building": "dormitory",
+        "building:levels": "3",
+        "name": "Eendrag",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8722938,
+          -33.9314089
+        ]
+      },
+      "id": "relation/4430416"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/4430422",
+        "building": "dormitory",
+        "name": "Dagbreek",
+        "nohousenumber": "yes",
+        "type": "multipolygon",
+        "wikidata": "Q7607248",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8687046,
+          -33.9329467
+        ]
+      },
+      "id": "relation/4430422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/9698562",
+        "building": "university",
+        "name": "Forestry",
+        "name:af": "Bosbou",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.866686,
+          -33.9268436
+        ]
+      },
+      "id": "relation/9698562"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/9698785",
+        "addr:city": "Stellenbosch",
+        "addr:housenumber": "44",
+        "addr:street": "Banghoek",
+        "building": "university",
+        "name": "Language Centre",
+        "operator": "Stellenbosch University",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.863724,
+          -33.9300314
+        ]
+      },
+      "id": "relation/9698785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/9698958",
+        "building": "residential",
+        "building:levels": "3",
+        "name": "Russel Botman House",
+        "name:af": "Huis Russel Botman",
+        "name:en": "Russel Botman House",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8720364,
+          -33.9320543
+        ]
+      },
+      "id": "relation/9698958"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/17221703",
+        "addr:city": "Stellenbosch",
+        "addr:street": "Van Riebeeck",
+        "building": "dormitory",
+        "name": "Huis Neethling",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8697736,
+          -33.9368023
+        ]
+      },
+      "id": "relation/17221703"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/17938818",
+        "building": "dormitory",
+        "name": "Harmonie",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8654325,
+          -33.9353425
+        ]
+      },
+      "id": "relation/17938818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/17964135",
+        "building": "apartments",
+        "name": "Listen Live Learn",
+        "operator": "Stellenbosch University",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8711904,
+          -33.9322516
+        ]
+      },
+      "id": "relation/17964135"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/59991253",
+        "building": "university",
+        "building:levels": "3",
+        "name": "Process Engineering",
+        "name:af": "Proses Ingenieurswese",
+        "name:en": "Process Engineering",
+        "nohousenumber": "yes",
+        "roof:levels": "0",
+        "roof:shape": "flat",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8664372,
+          -33.9290048
+        ]
+      },
+      "id": "way/59991253"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/59991408",
+        "building": "university",
+        "building:levels": "6",
+        "name": "General Engineering",
+        "name:af": "Algemene Ingenieurswese",
+        "name:en": "General Engineering",
+        "nohousenumber": "yes",
+        "roof:levels": "0",
+        "roof:shape": "flat",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8650656,
+          -33.929402
+        ]
+      },
+      "id": "way/59991408"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/59991493",
+        "building": "university",
+        "name": "Industrial Engineering",
+        "name:af": "Bedryfs Ingenieurswese",
+        "name:en": "Industrial Engineering",
+        "website": "https://ie.sun.ac.za/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8658613,
+          -33.9293923
+        ]
+      },
+      "id": "way/59991493"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/61481017",
+        "building": "university",
+        "building:levels": "5",
+        "name": "Electrical & Electronic Engineering",
+        "name:af": "Elektries & Elektroniese Ingenieurswese",
+        "name:en": "Electrical & Electronic Engineering",
+        "nohousenumber": "yes",
+        "roof:levels": "0",
+        "roof:shape": "flat",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8666979,
+          -33.9284441
+        ]
+      },
+      "id": "way/61481017"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/61482156",
+        "building": "university",
+        "name": "Civil Engineering",
+        "name:af": "Siviele Ingenieurswese",
+        "name:en": "Civil Engineering",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8652531,
+          -33.927765
+        ]
+      },
+      "id": "way/61482156"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/61562792",
+        "building": "university",
+        "name": "Mechanical & Mechatronic Engineering",
+        "name:af": "Meganies & Megatroniese Ingenieurswese",
+        "name:en": "Mechanical & Mechatronic Engineering",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8650927,
+          -33.9286525
+        ]
+      },
+      "id": "way/61562792"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/61562795",
+        "building": "university",
+        "name": "Africa Open Institute",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8643451,
+          -33.9309863
+        ]
+      },
+      "id": "way/61562795"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/61625111",
+        "building": "university",
+        "internet_access": "yes",
+        "internet_access:fee": "customers",
+        "name": "Konservatorium",
+        "opening_hours": "Mo-Fr 07:00 - 22:00",
+        "operator": "Stellenbosch University",
+        "operator:type": "university",
+        "website": "https://endler.sun.ac.za",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8663585,
+          -33.93448
+        ]
+      },
+      "id": "way/61625111"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/61637732",
+        "building": "retail",
+        "building:levels": "4",
+        "name": "Neelsie Student Centre",
+        "nohousenumber": "yes",
+        "roof:levels": "0",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8654048,
+          -33.9326688
+        ]
+      },
+      "id": "way/61637732"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/74345971",
+        "addr:city": "Stellenbosch",
+        "addr:street": "Victoria Street",
+        "building": "university",
+        "name": "J.H. Neethling",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8646516,
+          -33.9335841
+        ]
+      },
+      "id": "way/74345971"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/74345973",
+        "building": "university",
+        "name": "Merensky",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8651079,
+          -33.9318898
+        ]
+      },
+      "id": "way/74345973"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/74345978",
+        "building": "university",
+        "name": "A.I. Perold",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8648967,
+          -33.932675
+        ]
+      },
+      "id": "way/74345978"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/74345988",
+        "addr:city": "Stellenbosch",
+        "addr:street": "Victoria Street",
+        "building": "university",
+        "name": "Administration C",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8640218,
+          -33.9335408
+        ]
+      },
+      "id": "way/74345988"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/74345993",
+        "addr:city": "Stellenbosch",
+        "addr:street": "Victoria Street",
+        "building": "university",
+        "name": "Administration B",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8633326,
+          -33.9336352
+        ]
+      },
+      "id": "way/74345993"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/74355181",
+        "building": "university",
+        "name": "Purchasing / Aankope",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8689041,
+          -33.9322535
+        ]
+      },
+      "id": "way/74355181"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/74355184",
+        "building": "university",
+        "leisure": "sports_centre",
+        "name": "Old Mutual Sport Centre",
+        "sport": "squash",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8715838,
+          -33.9320914
+        ]
+      },
+      "id": "way/74355184"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/74359841",
+        "building": "university",
+        "name": "Visual Arts",
+        "name:af": "Visuele Kunste",
+        "name:en": "Visual Arts",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8654842,
+          -33.9333709
+        ]
+      },
+      "id": "way/74359841"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/74520921",
+        "building": "residential",
+        "name": "Crozier Hof",
+        "operator": "Stellenbosch University",
+        "residential": "university",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8614259,
+          -33.9330241
+        ]
+      },
+      "id": "way/74520921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/74721230",
+        "addr:city": "Stellenbosch",
+        "addr:street": "Neethling",
+        "building": "dormitory",
+        "name": "Huis De Villiers",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.866283,
+          -33.9353796
+        ]
+      },
+      "id": "way/74721230"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/76728184",
+        "building": "university",
+        "name": "J.S. Marais",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8663424,
+          -33.93341
+        ]
+      },
+      "id": "way/76728184"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/76728453",
+        "building": "university",
+        "name": "Polymer science",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8662926,
+          -33.9329474
+        ]
+      },
+      "id": "way/76728453"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/76729707",
+        "building": "university",
+        "name": "Zoology & Botany",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8655453,
+          -33.9310002
+        ]
+      },
+      "id": "way/76729707"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/76730176",
+        "building": "university",
+        "name": "Genetics",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8658181,
+          -33.9306957
+        ]
+      },
+      "id": "way/76730176"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/76731594",
+        "building": "university",
+        "name": "Centre for Student Counseling",
+        "office": "university",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8669758,
+          -33.9341031
+        ]
+      },
+      "id": "way/76731594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/76731601",
+        "building": "university",
+        "name": "Centre for Prospective Students",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8673026,
+          -33.9339709
+        ]
+      },
+      "id": "way/76731601"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/76732145",
+        "building": "university",
+        "name": "Campus Security",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8667352,
+          -33.9310797
+        ]
+      },
+      "id": "way/76732145"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/76732264",
+        "addr:street": "Merriman Street",
+        "building": "dormitory",
+        "name": "Huis Marais / Huis Visser",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8683866,
+          -33.9316654
+        ]
+      },
+      "id": "way/76732264"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/100521137",
+        "building": "university",
+        "name": "Theology",
+        "name:af": "Teologie",
+        "name:en": "Theology",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8639873,
+          -33.9392392
+        ]
+      },
+      "id": "way/100521137"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/100633498",
+        "building": "university",
+        "name": "Jan Mouton Learning Centre",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8661485,
+          -33.932519
+        ]
+      },
+      "id": "way/100633498"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/210268175",
+        "addr:city": "Stellenbosch",
+        "addr:postcode": "7602",
+        "addr:street": "Victoria Street",
+        "building": "university",
+        "building:levels": "4",
+        "description": "Horticulture, Soil Science, Plant Pathology",
+        "name": "Lombardi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8652821,
+          -33.9344754
+        ]
+      },
+      "id": "way/210268175"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/210268176",
+        "alt_name": "Wilgenhof Men's Residence",
+        "building": "dormitory",
+        "building:levels": "3",
+        "name": "Wilgenhof",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8637001,
+          -33.9346354
+        ]
+      },
+      "id": "way/210268176"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/221161293",
+        "building": "university",
+        "name": "Arts and Social Sciences",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8611905,
+          -33.9323872
+        ]
+      },
+      "id": "way/221161293"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/239970095",
+        "building": "dormitory",
+        "name": "Minerva",
+        "name:af": "Minerva Dameskoshuis",
+        "name:en": "Minerva Women's Residence",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8707346,
+          -33.93463
+        ]
+      },
+      "id": "way/239970095"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/239970096",
+        "building": "dormitory",
+        "name": "Lydia",
+        "name:af": "Lydia Dameskoshuis",
+        "name:en": "Lydia Women's Residence",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.869638,
+          -33.9346573
+        ]
+      },
+      "id": "way/239970096"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250285368",
+        "building": "university",
+        "name": "C.G.W. Schumann",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8672958,
+          -33.9324603
+        ]
+      },
+      "id": "way/250285368"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250302452",
+        "building": "university",
+        "name": "Natural Science Glass House",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8638086,
+          -33.9319085
+        ]
+      },
+      "id": "way/250302452"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250302453",
+        "building": "university",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8635731,
+          -33.9325094
+        ]
+      },
+      "id": "way/250302453"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250302628",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8665951,
+          -33.9304368
+        ]
+      },
+      "id": "way/250302628"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250302633",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8670023,
+          -33.9309193
+        ]
+      },
+      "id": "way/250302633"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250302636",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8662927,
+          -33.9311644
+        ]
+      },
+      "id": "way/250302636"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250302637",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8666945,
+          -33.9307256
+        ]
+      },
+      "id": "way/250302637"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250302639",
+        "building": "yes",
+        "name": "Military House",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.866993,
+          -33.9310837
+        ]
+      },
+      "id": "way/250302639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250302643",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8684729,
+          -33.9321621
+        ]
+      },
+      "id": "way/250302643"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250302645",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8671117,
+          -33.9310088
+        ]
+      },
+      "id": "way/250302645"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250302646",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8673268,
+          -33.9310298
+        ]
+      },
+      "id": "way/250302646"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250302648",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8666517,
+          -33.9305844
+        ]
+      },
+      "id": "way/250302648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250302651",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8685971,
+          -33.9323152
+        ]
+      },
+      "id": "way/250302651"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250302652",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8660553,
+          -33.930334
+        ]
+      },
+      "id": "way/250302652"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250303873",
+        "amenity": "theatre",
+        "building": "university",
+        "name": "Adam Small",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8610086,
+          -33.9339191
+        ]
+      },
+      "id": "way/250303873"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250303876",
+        "building": "university",
+        "department": "Journalism",
+        "name": "Journalism",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8611747,
+          -33.933014
+        ]
+      },
+      "id": "way/250303876"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250303877",
+        "addr:city": "Stellenbosch",
+        "addr:street": "Crozier",
+        "building": "university",
+        "building:architecture": "neoclassicism",
+        "name": "C.L. Marais Bibliotheek",
+        "note": "University of Stellenbosch HF Oppenheimer Chair in Human Rights Law South African Research Chair in Property Law",
+        "operator": "Stellenbosch University",
+        "start_date": "1899",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8612226,
+          -33.9336066
+        ]
+      },
+      "id": "way/250303877"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250304422",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8604944,
+          -33.9331809
+        ]
+      },
+      "id": "way/250304422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250304423",
+        "building": "university",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8607329,
+          -33.9331902
+        ]
+      },
+      "id": "way/250304423"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250304424",
+        "building": "university",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8606185,
+          -33.9332024
+        ]
+      },
+      "id": "way/250304424"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250304425",
+        "building": "university",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8609128,
+          -33.9331708
+        ]
+      },
+      "id": "way/250304425"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250306354",
+        "building": "dormitory",
+        "building:levels": "12",
+        "name": "Helshoogte",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8711303,
+          -33.9315023
+        ]
+      },
+      "id": "way/250306354"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250306356",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8708789,
+          -33.9314386
+        ]
+      },
+      "id": "way/250306356"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670875",
+        "building": "university",
+        "name": "Simon Nkoli House",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8670211,
+          -33.9344239
+        ]
+      },
+      "id": "way/251670875"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670876",
+        "building": "dormitory",
+        "name": "Huis Stanzi",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8699558,
+          -33.9340059
+        ]
+      },
+      "id": "way/251670876"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670878",
+        "building": "university",
+        "name": "Graduand Career Services",
+        "office": "university",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8673849,
+          -33.9342685
+        ]
+      },
+      "id": "way/251670878"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670879",
+        "building": "university",
+        "name": "Psychotherapeutic and Support services",
+        "office": "university",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8677527,
+          -33.9339628
+        ]
+      },
+      "id": "way/251670879"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670881",
+        "building": "university",
+        "name": "Centre for Teaching and Learning",
+        "office": "university",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8670702,
+          -33.9346929
+        ]
+      },
+      "id": "way/251670881"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670885",
+        "building": "dormitory",
+        "name": "Huis Cilliers",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8697517,
+          -33.9355775
+        ]
+      },
+      "id": "way/251670885"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670886",
+        "building": "apartments",
+        "building:levels": "2",
+        "check_date": "2024-01-14",
+        "name": "Waldenhof",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8688904,
+          -33.9342299
+        ]
+      },
+      "id": "way/251670886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670889",
+        "building": "dormitory",
+        "name": "Hysmoles Heemstede",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.86916,
+          -33.9355697
+        ]
+      },
+      "id": "way/251670889"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670890",
+        "amenity": "doctors",
+        "building": "yes",
+        "healthcare": "doctor",
+        "name": "Campus Health Service",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8694883,
+          -33.9355971
+        ]
+      },
+      "id": "way/251670890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670891",
+        "building": "dormitory",
+        "name": "Kleine Katryn",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8699161,
+          -33.9336677
+        ]
+      },
+      "id": "way/251670891"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670892",
+        "building": "dormitory",
+        "name": "Grote Griet",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8701496,
+          -33.9336973
+        ]
+      },
+      "id": "way/251670892"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670894",
+        "building": "university",
+        "name": "Academic Counselling and Development",
+        "office": "university",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.867539,
+          -33.9339367
+        ]
+      },
+      "id": "way/251670894"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670896",
+        "building": "university",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.867886,
+          -33.9349251
+        ]
+      },
+      "id": "way/251670896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670897",
+        "building": "university",
+        "name": "Potluck",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8678622,
+          -33.9345955
+        ]
+      },
+      "id": "way/251670897"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670898",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8701535,
+          -33.934624
+        ]
+      },
+      "id": "way/251670898"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670899",
+        "building": "university",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8676936,
+          -33.9341795
+        ]
+      },
+      "id": "way/251670899"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670902",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8675091,
+          -33.9340624
+        ]
+      },
+      "id": "way/251670902"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670903",
+        "building": "dormitory",
+        "name": "House Walden",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.868889,
+          -33.9339067
+        ]
+      },
+      "id": "way/251670903"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670906",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8687131,
+          -33.9340541
+        ]
+      },
+      "id": "way/251670906"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251670907",
+        "building": "university",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8676494,
+          -33.9343614
+        ]
+      },
+      "id": "way/251670907"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251671897",
+        "building": "dormitory",
+        "name": "Monica",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8649023,
+          -33.9354818
+        ]
+      },
+      "id": "way/251671897"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251671899",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8663872,
+          -33.9351659
+        ]
+      },
+      "id": "way/251671899"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251671900",
+        "addr:city": "Stellenbosch",
+        "addr:street": "Murray",
+        "building": "dormitory",
+        "name": "De Villa Residence",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8667688,
+          -33.9353549
+        ]
+      },
+      "id": "way/251671900"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251671901",
+        "building": "roof",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8647523,
+          -33.935269
+        ]
+      },
+      "id": "way/251671901"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251671904",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8648538,
+          -33.9352233
+        ]
+      },
+      "id": "way/251671904"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251671905",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8650122,
+          -33.9351475
+        ]
+      },
+      "id": "way/251671905"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251672203",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8641789,
+          -33.9350931
+        ]
+      },
+      "id": "way/251672203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251672204",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8639137,
+          -33.9352218
+        ]
+      },
+      "id": "way/251672204"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251672205",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8645945,
+          -33.934689
+        ]
+      },
+      "id": "way/251672205"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251672206",
+        "building": "dormitory",
+        "building:levels": "2",
+        "name": "Wilgenhof Dining Hall",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8638962,
+          -33.9350154
+        ]
+      },
+      "id": "way/251672206"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251672207",
+        "building": "dormitory",
+        "building:levels": "2",
+        "name": "Old Bachelors",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8633386,
+          -33.9348124
+        ]
+      },
+      "id": "way/251672207"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251672542",
+        "addr:city": "Stellenbosch",
+        "addr:street": "Ryneveld",
+        "building": "university",
+        "museum": "art",
+        "name": "Stellenbosch University Museum",
+        "operator": "Stellenbosch University",
+        "tourism": "museum",
+        "website": "https://www0.sun.ac.za/museum/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8630488,
+          -33.9352394
+        ]
+      },
+      "id": "way/251672542"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251672638",
+        "building": "university",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8675544,
+          -33.9351178
+        ]
+      },
+      "id": "way/251672638"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251672639",
+        "building": "university",
+        "name": "Information Governance",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8673886,
+          -33.9352718
+        ]
+      },
+      "id": "way/251672639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251672640",
+        "building": "university",
+        "name": "Whispers",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8678634,
+          -33.9351552
+        ]
+      },
+      "id": "way/251672640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251672641",
+        "building": "dormitory",
+        "name": "Eikerus",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8711194,
+          -33.9335943
+        ]
+      },
+      "id": "way/251672641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251672643",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8674243,
+          -33.9349144
+        ]
+      },
+      "id": "way/251672643"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251672645",
+        "building": "dormitory",
+        "name": "Rondomtalie",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8708991,
+          -33.9335988
+        ]
+      },
+      "id": "way/251672645"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251672646",
+        "building": "university",
+        "name": "Stellenbosch Foundation",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8676132,
+          -33.9353226
+        ]
+      },
+      "id": "way/251672646"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251672647",
+        "building": "dormitory",
+        "name": "Huis Paleis",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8706563,
+          -33.9336322
+        ]
+      },
+      "id": "way/251672647"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/319067868",
+        "building": "yes",
+        "name": "Tinie Louw Eetsaal",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.871942,
+          -33.9349771
+        ]
+      },
+      "id": "way/319067868"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/366326405",
+        "building": "university",
+        "name": "Engineering Library",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8659352,
+          -33.9291125
+        ]
+      },
+      "id": "way/366326405"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/469001257",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.875147,
+          -33.9349017
+        ]
+      },
+      "id": "way/469001257"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/640653999",
+        "addr:city": "Stellenbosch",
+        "addr:housenumber": "153",
+        "addr:street": "Banghoek",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8657218,
+          -33.9301908
+        ]
+      },
+      "id": "way/640653999"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/640654000",
+        "addr:city": "Stellenbosch",
+        "addr:housenumber": "151",
+        "addr:street": "Banghoek",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8655117,
+          -33.9302596
+        ]
+      },
+      "id": "way/640654000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/640654001",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8650717,
+          -33.9303718
+        ]
+      },
+      "id": "way/640654001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/640654002",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8650005,
+          -33.9305073
+        ]
+      },
+      "id": "way/640654002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/640654003",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8647737,
+          -33.9303411
+        ]
+      },
+      "id": "way/640654003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/640654004",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8647227,
+          -33.9305524
+        ]
+      },
+      "id": "way/640654004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/641349789",
+        "building": "university",
+        "name": "Stellenbosch Institute for Advanced Study",
+        "name:af": "Stellenbosse Instituut vir Gevorderde Navorsing",
+        "name:en": "Stellenbosch Institute for Advanced Study",
+        "office": "research",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.874055,
+          -33.9349673
+        ]
+      },
+      "id": "way/641349789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/646490641",
+        "addr:city": "Stellenbosch",
+        "addr:housenumber": "48",
+        "addr:street": "Banghoek",
+        "building": "university",
+        "name": "Vehicle Fleet",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.863334,
+          -33.9300611
+        ]
+      },
+      "id": "way/646490641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/646490663",
+        "building": "residential",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8660688,
+          -33.9301282
+        ]
+      },
+      "id": "way/646490663"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/675163464",
+        "building": "university",
+        "name": "Ou Conservatorium",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8650464,
+          -33.9363237
+        ]
+      },
+      "id": "way/675163464"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/697848460",
+        "building": "university",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8654664,
+          -33.9284376
+        ]
+      },
+      "id": "way/697848460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/697848461",
+        "building": "university",
+        "building:levels": "5",
+        "nohousenumber": "yes",
+        "roof:levels": "0",
+        "roof:shape": "flat",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8661642,
+          -33.9282196
+        ]
+      },
+      "id": "way/697848461"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/697848462",
+        "building": "university",
+        "layer": "1",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8659241,
+          -33.9286906
+        ]
+      },
+      "id": "way/697848462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/697848463",
+        "building": "university",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8656725,
+          -33.9291779
+        ]
+      },
+      "id": "way/697848463"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/697848464",
+        "building": "university",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8655384,
+          -33.9294236
+        ]
+      },
+      "id": "way/697848464"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/697863027",
+        "building": "university",
+        "layer": "1",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8734405,
+          -33.9350392
+        ]
+      },
+      "id": "way/697863027"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/697870216",
+        "building": "university",
+        "name": "South African Centre for Epidemiological Modelling and Analysis",
+        "office": "research",
+        "short_name": "SACEMA",
+        "website": "https://www.sacema.org/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8757551,
+          -33.9349383
+        ]
+      },
+      "id": "way/697870216"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/697877951",
+        "building": "university",
+        "name": "W.A.T",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8625611,
+          -33.9309056
+        ]
+      },
+      "id": "way/697877951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/751714086",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8643993,
+          -33.9311383
+        ]
+      },
+      "id": "way/751714086"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/751714087",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8648288,
+          -33.9312851
+        ]
+      },
+      "id": "way/751714087"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/751714090",
+        "building": "yes",
+        "name": "Matie Community Services",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8625745,
+          -33.930132
+        ]
+      },
+      "id": "way/751714090"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/751714091",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.862083,
+          -33.9302694
+        ]
+      },
+      "id": "way/751714091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/783008253",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8637228,
+          -33.9351602
+        ]
+      },
+      "id": "way/783008253"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/783008254",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8638281,
+          -33.9351127
+        ]
+      },
+      "id": "way/783008254"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/783008255",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8640798,
+          -33.9353004
+        ]
+      },
+      "id": "way/783008255"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/784454750",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8689421,
+          -33.9324696
+        ]
+      },
+      "id": "way/784454750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/784454753",
+        "building": "residential",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8713575,
+          -33.9336751
+        ]
+      },
+      "id": "way/784454753"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/784454754",
+        "building": "university",
+        "name": "House Albie",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8713773,
+          -33.933529
+        ]
+      },
+      "id": "way/784454754"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/784505910",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8666962,
+          -33.9351577
+        ]
+      },
+      "id": "way/784505910"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/784505911",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8668427,
+          -33.9352085
+        ]
+      },
+      "id": "way/784505911"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/784505913",
+        "building": "dormitory",
+        "name": "Markotter House",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8671712,
+          -33.9353215
+        ]
+      },
+      "id": "way/784505913"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/784505914",
+        "building": "residential",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8672095,
+          -33.9351403
+        ]
+      },
+      "id": "way/784505914"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/784600531",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8653093,
+          -33.932208
+        ]
+      },
+      "id": "way/784600531"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/853500106",
+        "addr:city": "Stellenbosch",
+        "addr:street": "Ryneveld",
+        "building": "university",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8635396,
+          -33.9355535
+        ]
+      },
+      "id": "way/853500106"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/853500107",
+        "addr:city": "Stellenbosch",
+        "addr:street": "Ryneveld",
+        "building": "university",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8633765,
+          -33.9355893
+        ]
+      },
+      "id": "way/853500107"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/853500108",
+        "building": "roof",
+        "layer": "1",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8634465,
+          -33.9355025
+        ]
+      },
+      "id": "way/853500108"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/859018016",
+        "building": "roof",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8686263,
+          -33.9324774
+        ]
+      },
+      "id": "way/859018016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/971999410",
+        "building": "university",
+        "name": "Maintenance Workshop",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8653469,
+          -33.9252018
+        ]
+      },
+      "id": "way/971999410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/978522448",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8642716,
+          -33.9304236
+        ]
+      },
+      "id": "way/978522448"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/978522449",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8642943,
+          -33.930572
+        ]
+      },
+      "id": "way/978522449"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/978522450",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8645045,
+          -33.9313887
+        ]
+      },
+      "id": "way/978522450"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/978522451",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.864807,
+          -33.9309314
+        ]
+      },
+      "id": "way/978522451"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/978522452",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8647458,
+          -33.9310655
+        ]
+      },
+      "id": "way/978522452"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/978522453",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8648996,
+          -33.9310687
+        ]
+      },
+      "id": "way/978522453"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/997196446",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8670679,
+          -33.9291744
+        ]
+      },
+      "id": "way/997196446"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/997196457",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8674207,
+          -33.9264485
+        ]
+      },
+      "id": "way/997196457"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/997196465",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8677821,
+          -33.9257808
+        ]
+      },
+      "id": "way/997196465"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/998767083",
+        "building": "university",
+        "name": "Department of Food Science",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8710762,
+          -33.9253631
+        ]
+      },
+      "id": "way/998767083"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1022990881",
+        "building": "roof",
+        "layer": "1",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8657836,
+          -33.9325421
+        ]
+      },
+      "id": "way/1022990881"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1022990886",
+        "building": "roof",
+        "layer": "1",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8650942,
+          -33.9322697
+        ]
+      },
+      "id": "way/1022990886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1023008469",
+        "bridge": "yes",
+        "building": "yes",
+        "layer": "1",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8631737,
+          -33.9334143
+        ]
+      },
+      "id": "way/1023008469"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1023994770",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8683817,
+          -33.9324976
+        ]
+      },
+      "id": "way/1023994770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1024008861",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8637463,
+          -33.9335777
+        ]
+      },
+      "id": "way/1024008861"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1024012548",
+        "building": "roof",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8684031,
+          -33.9320663
+        ]
+      },
+      "id": "way/1024012548"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1024012551",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8688205,
+          -33.9317168
+        ]
+      },
+      "id": "way/1024012551"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1024012552",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8684047,
+          -33.9319371
+        ]
+      },
+      "id": "way/1024012552"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1024094248",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8642771,
+          -33.9313935
+        ]
+      },
+      "id": "way/1024094248"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1211275017",
+        "building": "yes",
+        "source": "microsoft/BuildingFootprints",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8726428,
+          -33.9316632
+        ]
+      },
+      "id": "way/1211275017"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1239827091",
+        "building": "yes",
+        "name": "Waldenhof Pakkamer",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8690429,
+          -33.9340761
+        ]
+      },
+      "id": "way/1239827091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1241331765",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8635078,
+          -33.9390001
+        ]
+      },
+      "id": "way/1241331765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1241923252",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8645454,
+          -33.9390895
+        ]
+      },
+      "id": "way/1241923252"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1243160704",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.862861,
+          -33.931992
+        ]
+      },
+      "id": "way/1243160704"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1243418037",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8640739,
+          -33.9309384
+        ]
+      },
+      "id": "way/1243418037"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1243418038",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8643614,
+          -33.9308468
+        ]
+      },
+      "id": "way/1243418038"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1243418044",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8647957,
+          -33.9311322
+        ]
+      },
+      "id": "way/1243418044"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1243418047",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8649379,
+          -33.9309588
+        ]
+      },
+      "id": "way/1243418047"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1243418048",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8648982,
+          -33.9307075
+        ]
+      },
+      "id": "way/1243418048"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1243418049",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.86475,
+          -33.930661
+        ]
+      },
+      "id": "way/1243418049"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1243418050",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8647669,
+          -33.9307884
+        ]
+      },
+      "id": "way/1243418050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1243997695",
+        "building": "roof",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8626406,
+          -33.929902
+        ]
+      },
+      "id": "way/1243997695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1243997696",
+        "building": "roof",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8632269,
+          -33.9298323
+        ]
+      },
+      "id": "way/1243997696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1243997697",
+        "building": "university",
+        "name": "Africa Centre for HIV and AIDS Management",
+        "office": "research",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8637486,
+          -33.929791
+        ]
+      },
+      "id": "way/1243997697"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1243997698",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8620817,
+          -33.9300986
+        ]
+      },
+      "id": "way/1243997698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1244613516",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.864351,
+          -33.932417
+        ]
+      },
+      "id": "way/1244613516"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1244613517",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8639071,
+          -33.9324459
+        ]
+      },
+      "id": "way/1244613517"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1244613518",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.864028,
+          -33.9327555
+        ]
+      },
+      "id": "way/1244613518"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1244613519",
+        "building": "yes",
+        "layer": "-1",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8638888,
+          -33.9332521
+        ]
+      },
+      "id": "way/1244613519"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1244623877",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8682547,
+          -33.931365
+        ]
+      },
+      "id": "way/1244623877"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1244629748",
+        "building": "university",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8676868,
+          -33.9345287
+        ]
+      },
+      "id": "way/1244629748"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1244629749",
+        "building": "university",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8677279,
+          -33.9347777
+        ]
+      },
+      "id": "way/1244629749"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1244630064",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8716563,
+          -33.9353677
+        ]
+      },
+      "id": "way/1244630064"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1244630065",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8695796,
+          -33.9353784
+        ]
+      },
+      "id": "way/1244630065"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1244630066",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8692447,
+          -33.9353193
+        ]
+      },
+      "id": "way/1244630066"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1244631649",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.87009,
+          -33.9341526
+        ]
+      },
+      "id": "way/1244631649"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1244631651",
+        "building": "roof",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.869928,
+          -33.933757
+        ]
+      },
+      "id": "way/1244631651"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1251079097",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8695223,
+          -33.9368893
+        ]
+      },
+      "id": "way/1251079097"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1251158130",
+        "building": "university",
+        "name": "Centre for Sustainability Transitions",
+        "office": "research",
+        "operator": "Stellenbosch University",
+        "website": "https://www0.sun.ac.za/cst/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8748163,
+          -33.9346685
+        ]
+      },
+      "id": "way/1251158130"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1252824128",
+        "building": "residential",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8708956,
+          -33.9336971
+        ]
+      },
+      "id": "way/1252824128"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1252824129",
+        "building": "residential",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8708478,
+          -33.93378
+        ]
+      },
+      "id": "way/1252824129"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1252894322",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8634645,
+          -33.9299449
+        ]
+      },
+      "id": "way/1252894322"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1253527698",
+        "building": "roof",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8639138,
+          -33.9349117
+        ]
+      },
+      "id": "way/1253527698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1254880873",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8671764,
+          -33.9266264
+        ]
+      },
+      "id": "way/1254880873"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1265084769",
+        "building": "greenhouse",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8667219,
+          -33.9399651
+        ]
+      },
+      "id": "way/1265084769"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1265084774",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8674573,
+          -33.9395003
+        ]
+      },
+      "id": "way/1265084774"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1265084775",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8671523,
+          -33.9398361
+        ]
+      },
+      "id": "way/1265084775"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1265084776",
+        "building": "yes",
+        "name": "Welgevallen Cellar",
+        "operator": "Stellenbosch University",
+        "website": "https://agric.sun.ac.za/welgevallen-cellar/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8672093,
+          -33.9395976
+        ]
+      },
+      "id": "way/1265084776"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1265084777",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8670472,
+          -33.9396912
+        ]
+      },
+      "id": "way/1265084777"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1265084778",
+        "building": "university",
+        "healthcare": "psychotherapist",
+        "name": "Welgevallen Community Psychology Clinic",
+        "operator": "Stellenbosch University",
+        "website": "http://www.sun.ac.za/english/entities/welgevallen-community-psychology-clinic/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8668639,
+          -33.9396139
+        ]
+      },
+      "id": "way/1265084778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1265084779",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8667359,
+          -33.939878
+        ]
+      },
+      "id": "way/1265084779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1265084780",
+        "building": "university",
+        "name": "Paul van der Bijl Laboratories",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8663524,
+          -33.9398322
+        ]
+      },
+      "id": "way/1265084780"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1275209772",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.865849,
+          -33.9260649
+        ]
+      },
+      "id": "way/1275209772"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1275211520",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8674766,
+          -33.9254105
+        ]
+      },
+      "id": "way/1275211520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1275211521",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8675664,
+          -33.9256133
+        ]
+      },
+      "id": "way/1275211521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1275211522",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8670703,
+          -33.9256362
+        ]
+      },
+      "id": "way/1275211522"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1275211523",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8672074,
+          -33.9254118
+        ]
+      },
+      "id": "way/1275211523"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1275211524",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8673423,
+          -33.9257495
+        ]
+      },
+      "id": "way/1275211524"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1275212906",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8681009,
+          -33.9247414
+        ]
+      },
+      "id": "way/1275212906"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1275212907",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8677295,
+          -33.9248879
+        ]
+      },
+      "id": "way/1275212907"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1275212908",
+        "building": "roof",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8673093,
+          -33.9251175
+        ]
+      },
+      "id": "way/1275212908"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1275212909",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8673025,
+          -33.9250496
+        ]
+      },
+      "id": "way/1275212909"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1275212910",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8679072,
+          -33.9251452
+        ]
+      },
+      "id": "way/1275212910"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1275212911",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8680267,
+          -33.925433
+        ]
+      },
+      "id": "way/1275212911"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1275212912",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8683536,
+          -33.9254673
+        ]
+      },
+      "id": "way/1275212912"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1295067809",
+        "building": "roof",
+        "layer": "1",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8650694,
+          -33.9258856
+        ]
+      },
+      "id": "way/1295067809"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1295067810",
+        "building": "security",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8651552,
+          -33.9258634
+        ]
+      },
+      "id": "way/1295067810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1295067811",
+        "building": "university",
+        "layer": "1",
+        "name": "Decanting",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.865369,
+          -33.9256169
+        ]
+      },
+      "id": "way/1295067811"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1295067813",
+        "building": "university",
+        "name": "Information and Communication Technology",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8655897,
+          -33.9246784
+        ]
+      },
+      "id": "way/1295067813"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1295067814",
+        "building": "university",
+        "name": "Facilities Management Services",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8656803,
+          -33.9243589
+        ]
+      },
+      "id": "way/1295067814"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1295067815",
+        "building": "university",
+        "name": "Facilities Management Store",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8659136,
+          -33.9246287
+        ]
+      },
+      "id": "way/1295067815"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1295067816",
+        "building": "university",
+        "name": "Facilities Management Annex",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8649441,
+          -33.9252055
+        ]
+      },
+      "id": "way/1295067816"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1295067817",
+        "building": "university",
+        "name": "Facilities Management",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.865367,
+          -33.9243247
+        ]
+      },
+      "id": "way/1295067817"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1295071668",
+        "building": "security",
+        "layer": "1",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8649824,
+          -33.9258924
+        ]
+      },
+      "id": "way/1295071668"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1307907395",
+        "building": "roof",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.865149,
+          -33.9354249
+        ]
+      },
+      "id": "way/1307907395"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1307907400",
+        "building": "roof",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8648041,
+          -33.9355465
+        ]
+      },
+      "id": "way/1307907400"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1307907410",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8645722,
+          -33.9352859
+        ]
+      },
+      "id": "way/1307907410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1307907417",
+        "building": "roof",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8654719,
+          -33.9356091
+        ]
+      },
+      "id": "way/1307907417"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1308103262",
+        "building": "carport",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8670986,
+          -33.9351688
+        ]
+      },
+      "id": "way/1308103262"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1308751383",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8692187,
+          -33.9347273
+        ]
+      },
+      "id": "way/1308751383"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1309255662",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8712534,
+          -33.9336993
+        ]
+      },
+      "id": "way/1309255662"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1309295314",
+        "building": "university",
+        "name": "Victoria Hub",
+        "note": "Needs to be drawn better with up to date imagery",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.864556,
+          -33.9351018
+        ]
+      },
+      "id": "way/1309295314"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1310058872",
+        "building": "university",
+        "name": "Maintenance",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8651478,
+          -33.9249069
+        ]
+      },
+      "id": "way/1310058872"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1310058873",
+        "building": "university",
+        "name": "LaunchLab",
+        "office": "startup_incubator",
+        "operator": "Stellenbosch University",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8657609,
+          -33.9250716
+        ]
+      },
+      "id": "way/1310058873"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1311004567",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8657573,
+          -33.9302834
+        ]
+      },
+      "id": "way/1311004567"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1415390141",
+        "building": "roof",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.8668192,
+          -33.9303113
+        ]
+      },
+      "id": "way/1415390141"
+    }
+  ]
+}

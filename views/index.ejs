@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find an Empty Room</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; padding: 1rem; }
+        form { display: flex; flex-direction: column; gap: 1rem; }
+        label { font-weight: bold; }
+        select, button { padding: 0.5rem; font-size: 1rem; }
+        button { background-color: #007bff; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Find an Empty Room 📍</h1>
+    <p>Select your last class and your next class. The app will find the most convenient empty room for you to use during your off-period right now.</p>
+    <form action="/find" method="POST">
+        <label for="lastClass">Where was your last class?</label>
+        <select name="lastClass" id="lastClass" required>
+            <% locations.forEach(loc => { %>
+                <option value="<%= loc.id %>"><%= loc.building %> - <%= loc.name %></option>
+            <% }); %>
+        </select>
+
+        <label for="nextClass">Where is your next class?</label>
+        <select name="nextClass" id="nextClass" required>
+             <% locations.forEach(loc => { %>
+                <option value="<%= loc.id %>"><%= loc.building %> - <%= loc.name %></option>
+            <% }); %>
+        </select>
+
+        <button type="submit">Find Room</button>
+    </form>
+</body>
+</html>

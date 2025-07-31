@@ -1,0 +1,37 @@
+[
+  {
+    "id": "NARGA_A202",
+    "name": "A202 NARGA",
+    "building": "NARGA",
+    "lat": -33.93256,
+    "lon": 18.86461
+  },
+  {
+    "id": "NARGA_A302",
+    "name": "A302 NARGA",
+    "building": "NARGA",
+    "lat": -33.93256,
+    "lon": 18.86461
+  },
+  {
+    "id": "SCHUMANN_206",
+    "name": "CGW Schumann-gebou 206",
+    "building": "Schumann Building",
+    "lat": -33.9333,
+    "lon": 18.8631
+  },
+  {
+    "id": "VAN_DER_STERR_1023",
+    "name": "Van der Sterr 1023",
+    "building": "Van der Sterr Building",
+    "lat": -33.9338,
+    "lon": 18.8639
+  },
+  {
+    "id": "MATH_INDUSTR_2005",
+    "name": "Wisk/Bedr 2005",
+    "building": "Maths & Industrial Psychology",
+    "lat": -33.9328,
+    "lon": 18.8668
+  }
+]

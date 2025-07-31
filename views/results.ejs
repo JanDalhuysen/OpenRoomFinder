@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Rooms</title>
+     <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 2rem auto; padding: 1rem; }
+        h1 { color: #333; }
+        a { text-decoration: none; color: #007bff; }
+        ul { list-style-type: none; padding: 0; }
+        li { background-color: #f9f9f9; border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem; border-radius: 5px; }
+        .room-name { font-size: 1.2rem; font-weight: bold; }
+        .details { color: #555; }
+    </style>
+</head>
+<body>
+    <h1>Best Available Rooms for You ✨</h1>
+    
+    <% if (rooms.length > 0) { %>
+        <p>Found <%= rooms.length %> empty room(s) for the <%= timeSlot.start %> - <%= timeSlot.end %> slot. They are ranked by the shortest total walking distance.</p>
+        <ul>
+            <% rooms.forEach(room => { %>
+                <li>
+                    <div class="room-name"><%= room.building %> - <%= room.name %></div>
+                    <div class="details">
+                        Total Walk: <strong><%= (room.totalDistance * 1000).toFixed(0) %> meters</strong>
+                    </div>
+                </li>
+            <% }); %>
+        </ul>
+    <% } else { %>
+        <p>Sorry, no suitable empty rooms were found for the <%= timeSlot.start %> - <%= timeSlot.end %> slot. 😞</p>
+    <% } %>
+
+    <a href="/">&#8592; Try Again</a>
+</body>
+</html>

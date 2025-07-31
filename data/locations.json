@@ -1,0 +1,856 @@
+[
+  {
+    "building": "Nerina",
+    "id": "NERINA",
+    "lat": -33.9353754,
+    "lon": 18.8708614,
+    "name": "Nerina"
+  },
+  {
+    "building": "Heemstede",
+    "id": "HEEMSTEDE",
+    "lat": -33.9354402,
+    "lon": 18.8687785,
+    "name": "Heemstede"
+  },
+  {
+    "building": "Huis Ten Bosch",
+    "id": "HUIS_TEN_BOSCH",
+    "lat": -33.9347236,
+    "lon": 18.8689035,
+    "name": "Huis Ten Bosch"
+  },
+  {
+    "building": "Van Der Sterr",
+    "id": "VAN_DER_STERR",
+    "lat": -33.9331487,
+    "lon": 18.8673834,
+    "name": "Van Der Sterr"
+  },
+  {
+    "building": "Chemistry",
+    "id": "CHEMISTRY",
+    "lat": -33.9320591,
+    "lon": 18.8672343,
+    "name": "Chemistry"
+  },
+  {
+    "building": "Majuba",
+    "id": "MAJUBA",
+    "lat": -33.9330305,
+    "lon": 18.8699109,
+    "name": "Majuba"
+  },
+  {
+    "building": "Sonop",
+    "id": "SONOP",
+    "lat": -33.9328916,
+    "lon": 18.8709196,
+    "name": "Sonop"
+  },
+  {
+    "building": "Irene",
+    "id": "IRENE",
+    "lat": -33.9325755,
+    "lon": 18.8719557,
+    "name": "Irene"
+  },
+  {
+    "building": "Simonsberg",
+    "id": "SIMONSBERG",
+    "lat": -33.9316042,
+    "lon": 18.8700343,
+    "name": "Simonsberg"
+  },
+  {
+    "building": "De Beers",
+    "id": "DE_BEERS",
+    "lat": -33.931882,
+    "lon": 18.8660501,
+    "name": "De Beers"
+  },
+  {
+    "building": "Administration A",
+    "id": "ADMINISTRATION_A",
+    "lat": -33.9328845,
+    "lon": 18.8631715,
+    "name": "Administration A"
+  },
+  {
+    "building": "Chamber of Mining / Geology",
+    "id": "CHAMBER_OF_MINING_/_GEOLOGY",
+    "lat": -33.9323936,
+    "lon": 18.8625132,
+    "name": "Chamber of Mining / Geology"
+  },
+  {
+    "building": "Natural Science",
+    "id": "NATURAL_SCIENCE",
+    "lat": -33.9321361,
+    "lon": 18.8632416,
+    "name": "Natural Science"
+  },
+  {
+    "building": "Industrial Psychology",
+    "id": "INDUSTRIAL_PSYCHOLOGY",
+    "lat": -33.9320143,
+    "lon": 18.8642124,
+    "name": "Industrial Psychology"
+  },
+  {
+    "building": "Krotoa",
+    "id": "KROTOA",
+    "lat": -33.9336951,
+    "lon": 18.8627082,
+    "name": "Krotoa"
+  },
+  {
+    "building": "GG Cillié",
+    "id": "GG_CILLIé",
+    "lat": -33.9328067,
+    "lon": 18.8617416,
+    "name": "GG Cillié"
+  },
+  {
+    "building": "Ou Hoofgebou",
+    "id": "OU_HOOFGEBOU",
+    "lat": -33.9338013,
+    "lon": 18.861806,
+    "name": "Ou Hoofgebou"
+  },
+  {
+    "building": "Metanoia",
+    "id": "METANOIA",
+    "lat": -33.9354243,
+    "lon": 18.8698857,
+    "name": "Metanoia"
+  },
+  {
+    "building": "Erica",
+    "id": "ERICA",
+    "lat": -33.9353857,
+    "lon": 18.8719046,
+    "name": "Erica"
+  },
+  {
+    "building": "Nemesia",
+    "id": "NEMESIA",
+    "lat": -33.9353553,
+    "lon": 18.8724014,
+    "name": "Nemesia"
+  },
+  {
+    "building": "Serruria",
+    "id": "SERRURIA",
+    "lat": -33.9353292,
+    "lon": 18.8729003,
+    "name": "Serruria"
+  },
+  {
+    "building": "Eendrag",
+    "id": "EENDRAG",
+    "lat": -33.9314089,
+    "lon": 18.8722938,
+    "name": "Eendrag"
+  },
+  {
+    "building": "Dagbreek",
+    "id": "DAGBREEK",
+    "lat": -33.9329467,
+    "lon": 18.8687046,
+    "name": "Dagbreek"
+  },
+  {
+    "building": "Forestry",
+    "id": "FORESTRY",
+    "lat": -33.9268436,
+    "lon": 18.866686,
+    "name": "Forestry"
+  },
+  {
+    "building": "Language Centre",
+    "id": "LANGUAGE_CENTRE",
+    "lat": -33.9300314,
+    "lon": 18.863724,
+    "name": "Language Centre"
+  },
+  {
+    "building": "Russel Botman House",
+    "id": "RUSSEL_BOTMAN_HOUSE",
+    "lat": -33.9320543,
+    "lon": 18.8720364,
+    "name": "Russel Botman House"
+  },
+  {
+    "building": "Huis Neethling",
+    "id": "HUIS_NEETHLING",
+    "lat": -33.9368023,
+    "lon": 18.8697736,
+    "name": "Huis Neethling"
+  },
+  {
+    "building": "Harmonie",
+    "id": "HARMONIE",
+    "lat": -33.9353425,
+    "lon": 18.8654325,
+    "name": "Harmonie"
+  },
+  {
+    "building": "Listen Live Learn",
+    "id": "LISTEN_LIVE_LEARN",
+    "lat": -33.9322516,
+    "lon": 18.8711904,
+    "name": "Listen Live Learn"
+  },
+  {
+    "building": "Process Engineering",
+    "id": "PROCESS_ENGINEERING",
+    "lat": -33.9290048,
+    "lon": 18.8664372,
+    "name": "Process Engineering"
+  },
+  {
+    "building": "General Engineering",
+    "id": "GENERAL_ENGINEERING",
+    "lat": -33.929402,
+    "lon": 18.8650656,
+    "name": "General Engineering"
+  },
+  {
+    "building": "Industrial Engineering",
+    "id": "INDUSTRIAL_ENGINEERING",
+    "lat": -33.9293923,
+    "lon": 18.8658613,
+    "name": "Industrial Engineering"
+  },
+  {
+    "building": "Electrical & Electronic Engineering",
+    "id": "ELECTRICAL_&_ELECTRONIC_ENGINEERING",
+    "lat": -33.9284441,
+    "lon": 18.8666979,
+    "name": "Electrical & Electronic Engineering"
+  },
+  {
+    "building": "Civil Engineering",
+    "id": "CIVIL_ENGINEERING",
+    "lat": -33.927765,
+    "lon": 18.8652531,
+    "name": "Civil Engineering"
+  },
+  {
+    "building": "Mechanical & Mechatronic Engineering",
+    "id": "MECHANICAL_&_MECHATRONIC_ENGINEERING",
+    "lat": -33.9286525,
+    "lon": 18.8650927,
+    "name": "Mechanical & Mechatronic Engineering"
+  },
+  {
+    "building": "Africa Open Institute",
+    "id": "AFRICA_OPEN_INSTITUTE",
+    "lat": -33.9309863,
+    "lon": 18.8643451,
+    "name": "Africa Open Institute"
+  },
+  {
+    "building": "Konservatorium",
+    "id": "KONSERVATORIUM",
+    "lat": -33.93448,
+    "lon": 18.8663585,
+    "name": "Konservatorium"
+  },
+  {
+    "building": "Neelsie Student Centre",
+    "id": "NEELSIE_STUDENT_CENTRE",
+    "lat": -33.9326688,
+    "lon": 18.8654048,
+    "name": "Neelsie Student Centre"
+  },
+  {
+    "building": "J.H. Neethling",
+    "id": "J.H._NEETHLING",
+    "lat": -33.9335841,
+    "lon": 18.8646516,
+    "name": "J.H. Neethling"
+  },
+  {
+    "building": "Merensky",
+    "id": "MERENSKY",
+    "lat": -33.9318898,
+    "lon": 18.8651079,
+    "name": "Merensky"
+  },
+  {
+    "building": "A.I. Perold",
+    "id": "A.I._PEROLD",
+    "lat": -33.932675,
+    "lon": 18.8648967,
+    "name": "A.I. Perold"
+  },
+  {
+    "building": "Administration C",
+    "id": "ADMINISTRATION_C",
+    "lat": -33.9335408,
+    "lon": 18.8640218,
+    "name": "Administration C"
+  },
+  {
+    "building": "Administration B",
+    "id": "ADMINISTRATION_B",
+    "lat": -33.9336352,
+    "lon": 18.8633326,
+    "name": "Administration B"
+  },
+  {
+    "building": "Purchasing / Aankope",
+    "id": "PURCHASING_/_AANKOPE",
+    "lat": -33.9322535,
+    "lon": 18.8689041,
+    "name": "Purchasing / Aankope"
+  },
+  {
+    "building": "Old Mutual Sport Centre",
+    "id": "OLD_MUTUAL_SPORT_CENTRE",
+    "lat": -33.9320914,
+    "lon": 18.8715838,
+    "name": "Old Mutual Sport Centre"
+  },
+  {
+    "building": "Visual Arts",
+    "id": "VISUAL_ARTS",
+    "lat": -33.9333709,
+    "lon": 18.8654842,
+    "name": "Visual Arts"
+  },
+  {
+    "building": "Crozier Hof",
+    "id": "CROZIER_HOF",
+    "lat": -33.9330241,
+    "lon": 18.8614259,
+    "name": "Crozier Hof"
+  },
+  {
+    "building": "Huis De Villiers",
+    "id": "HUIS_DE_VILLIERS",
+    "lat": -33.9353796,
+    "lon": 18.866283,
+    "name": "Huis De Villiers"
+  },
+  {
+    "building": "J.S. Marais",
+    "id": "J.S._MARAIS",
+    "lat": -33.93341,
+    "lon": 18.8663424,
+    "name": "J.S. Marais"
+  },
+  {
+    "building": "Polymer science",
+    "id": "POLYMER_SCIENCE",
+    "lat": -33.9329474,
+    "lon": 18.8662926,
+    "name": "Polymer science"
+  },
+  {
+    "building": "Zoology & Botany",
+    "id": "ZOOLOGY_&_BOTANY",
+    "lat": -33.9310002,
+    "lon": 18.8655453,
+    "name": "Zoology & Botany"
+  },
+  {
+    "building": "Genetics",
+    "id": "GENETICS",
+    "lat": -33.9306957,
+    "lon": 18.8658181,
+    "name": "Genetics"
+  },
+  {
+    "building": "Centre for Student Counseling",
+    "id": "CENTRE_FOR_STUDENT_COUNSELING",
+    "lat": -33.9341031,
+    "lon": 18.8669758,
+    "name": "Centre for Student Counseling"
+  },
+  {
+    "building": "Centre for Prospective Students",
+    "id": "CENTRE_FOR_PROSPECTIVE_STUDENTS",
+    "lat": -33.9339709,
+    "lon": 18.8673026,
+    "name": "Centre for Prospective Students"
+  },
+  {
+    "building": "Campus Security",
+    "id": "CAMPUS_SECURITY",
+    "lat": -33.9310797,
+    "lon": 18.8667352,
+    "name": "Campus Security"
+  },
+  {
+    "building": "Huis Marais / Huis Visser",
+    "id": "HUIS_MARAIS_/_HUIS_VISSER",
+    "lat": -33.9316654,
+    "lon": 18.8683866,
+    "name": "Huis Marais / Huis Visser"
+  },
+  {
+    "building": "Theology",
+    "id": "THEOLOGY",
+    "lat": -33.9392392,
+    "lon": 18.8639873,
+    "name": "Theology"
+  },
+  {
+    "building": "Jan Mouton Learning Centre",
+    "id": "JAN_MOUTON_LEARNING_CENTRE",
+    "lat": -33.932519,
+    "lon": 18.8661485,
+    "name": "Jan Mouton Learning Centre"
+  },
+  {
+    "building": "Lombardi",
+    "id": "LOMBARDI",
+    "lat": -33.9344754,
+    "lon": 18.8652821,
+    "name": "Lombardi"
+  },
+  {
+    "building": "Wilgenhof",
+    "id": "WILGENHOF",
+    "lat": -33.9346354,
+    "lon": 18.8637001,
+    "name": "Wilgenhof"
+  },
+  {
+    "building": "Arts and Social Sciences",
+    "id": "ARTS_AND_SOCIAL_SCIENCES",
+    "lat": -33.9323872,
+    "lon": 18.8611905,
+    "name": "Arts and Social Sciences"
+  },
+  {
+    "building": "Minerva",
+    "id": "MINERVA",
+    "lat": -33.93463,
+    "lon": 18.8707346,
+    "name": "Minerva"
+  },
+  {
+    "building": "Lydia",
+    "id": "LYDIA",
+    "lat": -33.9346573,
+    "lon": 18.869638,
+    "name": "Lydia"
+  },
+  {
+    "building": "C.G.W. Schumann",
+    "id": "C.G.W._SCHUMANN",
+    "lat": -33.9324603,
+    "lon": 18.8672958,
+    "name": "C.G.W. Schumann"
+  },
+  {
+    "building": "Natural Science Glass House",
+    "id": "NATURAL_SCIENCE_GLASS_HOUSE",
+    "lat": -33.9319085,
+    "lon": 18.8638086,
+    "name": "Natural Science Glass House"
+  },
+  {
+    "building": "Military House",
+    "id": "MILITARY_HOUSE",
+    "lat": -33.9310837,
+    "lon": 18.866993,
+    "name": "Military House"
+  },
+  {
+    "building": "Adam Small",
+    "id": "ADAM_SMALL",
+    "lat": -33.9339191,
+    "lon": 18.8610086,
+    "name": "Adam Small"
+  },
+  {
+    "building": "Journalism",
+    "id": "JOURNALISM",
+    "lat": -33.933014,
+    "lon": 18.8611747,
+    "name": "Journalism"
+  },
+  {
+    "building": "C.L. Marais Bibliotheek",
+    "id": "C.L._MARAIS_BIBLIOTHEEK",
+    "lat": -33.9336066,
+    "lon": 18.8612226,
+    "name": "C.L. Marais Bibliotheek"
+  },
+  {
+    "building": "Helshoogte",
+    "id": "HELSHOOGTE",
+    "lat": -33.9315023,
+    "lon": 18.8711303,
+    "name": "Helshoogte"
+  },
+  {
+    "building": "Simon Nkoli House",
+    "id": "SIMON_NKOLI_HOUSE",
+    "lat": -33.9344239,
+    "lon": 18.8670211,
+    "name": "Simon Nkoli House"
+  },
+  {
+    "building": "Huis Stanzi",
+    "id": "HUIS_STANZI",
+    "lat": -33.9340059,
+    "lon": 18.8699558,
+    "name": "Huis Stanzi"
+  },
+  {
+    "building": "Graduand Career Services",
+    "id": "GRADUAND_CAREER_SERVICES",
+    "lat": -33.9342685,
+    "lon": 18.8673849,
+    "name": "Graduand Career Services"
+  },
+  {
+    "building": "Psychotherapeutic and Support services",
+    "id": "PSYCHOTHERAPEUTIC_AND_SUPPORT_SERVICES",
+    "lat": -33.9339628,
+    "lon": 18.8677527,
+    "name": "Psychotherapeutic and Support services"
+  },
+  {
+    "building": "Centre for Teaching and Learning",
+    "id": "CENTRE_FOR_TEACHING_AND_LEARNING",
+    "lat": -33.9346929,
+    "lon": 18.8670702,
+    "name": "Centre for Teaching and Learning"
+  },
+  {
+    "building": "Huis Cilliers",
+    "id": "HUIS_CILLIERS",
+    "lat": -33.9355775,
+    "lon": 18.8697517,
+    "name": "Huis Cilliers"
+  },
+  {
+    "building": "Waldenhof",
+    "id": "WALDENHOF",
+    "lat": -33.9342299,
+    "lon": 18.8688904,
+    "name": "Waldenhof"
+  },
+  {
+    "building": "Hysmoles Heemstede",
+    "id": "HYSMOLES_HEEMSTEDE",
+    "lat": -33.9355697,
+    "lon": 18.86916,
+    "name": "Hysmoles Heemstede"
+  },
+  {
+    "building": "Campus Health Service",
+    "id": "CAMPUS_HEALTH_SERVICE",
+    "lat": -33.9355971,
+    "lon": 18.8694883,
+    "name": "Campus Health Service"
+  },
+  {
+    "building": "Kleine Katryn",
+    "id": "KLEINE_KATRYN",
+    "lat": -33.9336677,
+    "lon": 18.8699161,
+    "name": "Kleine Katryn"
+  },
+  {
+    "building": "Grote Griet",
+    "id": "GROTE_GRIET",
+    "lat": -33.9336973,
+    "lon": 18.8701496,
+    "name": "Grote Griet"
+  },
+  {
+    "building": "Academic Counselling and Development",
+    "id": "ACADEMIC_COUNSELLING_AND_DEVELOPMENT",
+    "lat": -33.9339367,
+    "lon": 18.867539,
+    "name": "Academic Counselling and Development"
+  },
+  {
+    "building": "Potluck",
+    "id": "POTLUCK",
+    "lat": -33.9345955,
+    "lon": 18.8678622,
+    "name": "Potluck"
+  },
+  {
+    "building": "House Walden",
+    "id": "HOUSE_WALDEN",
+    "lat": -33.9339067,
+    "lon": 18.868889,
+    "name": "House Walden"
+  },
+  {
+    "building": "Monica",
+    "id": "MONICA",
+    "lat": -33.9354818,
+    "lon": 18.8649023,
+    "name": "Monica"
+  },
+  {
+    "building": "De Villa Residence",
+    "id": "DE_VILLA_RESIDENCE",
+    "lat": -33.9353549,
+    "lon": 18.8667688,
+    "name": "De Villa Residence"
+  },
+  {
+    "building": "Wilgenhof Dining Hall",
+    "id": "WILGENHOF_DINING_HALL",
+    "lat": -33.9350154,
+    "lon": 18.8638962,
+    "name": "Wilgenhof Dining Hall"
+  },
+  {
+    "building": "Old Bachelors",
+    "id": "OLD_BACHELORS",
+    "lat": -33.9348124,
+    "lon": 18.8633386,
+    "name": "Old Bachelors"
+  },
+  {
+    "building": "Stellenbosch University Museum",
+    "id": "STELLENBOSCH_UNIVERSITY_MUSEUM",
+    "lat": -33.9352394,
+    "lon": 18.8630488,
+    "name": "Stellenbosch University Museum"
+  },
+  {
+    "building": "Information Governance",
+    "id": "INFORMATION_GOVERNANCE",
+    "lat": -33.9352718,
+    "lon": 18.8673886,
+    "name": "Information Governance"
+  },
+  {
+    "building": "Whispers",
+    "id": "WHISPERS",
+    "lat": -33.9351552,
+    "lon": 18.8678634,
+    "name": "Whispers"
+  },
+  {
+    "building": "Eikerus",
+    "id": "EIKERUS",
+    "lat": -33.9335943,
+    "lon": 18.8711194,
+    "name": "Eikerus"
+  },
+  {
+    "building": "Rondomtalie",
+    "id": "RONDOMTALIE",
+    "lat": -33.9335988,
+    "lon": 18.8708991,
+    "name": "Rondomtalie"
+  },
+  {
+    "building": "Stellenbosch Foundation",
+    "id": "STELLENBOSCH_FOUNDATION",
+    "lat": -33.9353226,
+    "lon": 18.8676132,
+    "name": "Stellenbosch Foundation"
+  },
+  {
+    "building": "Huis Paleis",
+    "id": "HUIS_PALEIS",
+    "lat": -33.9336322,
+    "lon": 18.8706563,
+    "name": "Huis Paleis"
+  },
+  {
+    "building": "Tinie Louw Eetsaal",
+    "id": "TINIE_LOUW_EETSAAL",
+    "lat": -33.9349771,
+    "lon": 18.871942,
+    "name": "Tinie Louw Eetsaal"
+  },
+  {
+    "building": "Engineering Library",
+    "id": "ENGINEERING_LIBRARY",
+    "lat": -33.9291125,
+    "lon": 18.8659352,
+    "name": "Engineering Library"
+  },
+  {
+    "building": "Stellenbosch Institute for Advanced Study",
+    "id": "STELLENBOSCH_INSTITUTE_FOR_ADVANCED_STUDY",
+    "lat": -33.9349673,
+    "lon": 18.874055,
+    "name": "Stellenbosch Institute for Advanced Study"
+  },
+  {
+    "building": "Vehicle Fleet",
+    "id": "VEHICLE_FLEET",
+    "lat": -33.9300611,
+    "lon": 18.863334,
+    "name": "Vehicle Fleet"
+  },
+  {
+    "building": "Ou Conservatorium",
+    "id": "OU_CONSERVATORIUM",
+    "lat": -33.9363237,
+    "lon": 18.8650464,
+    "name": "Ou Conservatorium"
+  },
+  {
+    "building": "South African Centre for Epidemiological Modelling and Analysis",
+    "id": "SOUTH_AFRICAN_CENTRE_FOR_EPIDEMIOLOGICAL_MODELLING_AND_ANALYSIS",
+    "lat": -33.9349383,
+    "lon": 18.8757551,
+    "name": "South African Centre for Epidemiological Modelling and Analysis"
+  },
+  {
+    "building": "W.A.T",
+    "id": "W.A.T",
+    "lat": -33.9309056,
+    "lon": 18.8625611,
+    "name": "W.A.T"
+  },
+  {
+    "building": "Matie Community Services",
+    "id": "MATIE_COMMUNITY_SERVICES",
+    "lat": -33.930132,
+    "lon": 18.8625745,
+    "name": "Matie Community Services"
+  },
+  {
+    "building": "House Albie",
+    "id": "HOUSE_ALBIE",
+    "lat": -33.933529,
+    "lon": 18.8713773,
+    "name": "House Albie"
+  },
+  {
+    "building": "Markotter House",
+    "id": "MARKOTTER_HOUSE",
+    "lat": -33.9353215,
+    "lon": 18.8671712,
+    "name": "Markotter House"
+  },
+  {
+    "building": "Maintenance Workshop",
+    "id": "MAINTENANCE_WORKSHOP",
+    "lat": -33.9252018,
+    "lon": 18.8653469,
+    "name": "Maintenance Workshop"
+  },
+  {
+    "building": "Department of Food Science",
+    "id": "DEPARTMENT_OF_FOOD_SCIENCE",
+    "lat": -33.9253631,
+    "lon": 18.8710762,
+    "name": "Department of Food Science"
+  },
+  {
+    "building": "Waldenhof Pakkamer",
+    "id": "WALDENHOF_PAKKAMER",
+    "lat": -33.9340761,
+    "lon": 18.8690429,
+    "name": "Waldenhof Pakkamer"
+  },
+  {
+    "building": "Africa Centre for HIV and AIDS Management",
+    "id": "AFRICA_CENTRE_FOR_HIV_AND_AIDS_MANAGEMENT",
+    "lat": -33.929791,
+    "lon": 18.8637486,
+    "name": "Africa Centre for HIV and AIDS Management"
+  },
+  {
+    "building": "Centre for Sustainability Transitions",
+    "id": "CENTRE_FOR_SUSTAINABILITY_TRANSITIONS",
+    "lat": -33.9346685,
+    "lon": 18.8748163,
+    "name": "Centre for Sustainability Transitions"
+  },
+  {
+    "building": "Welgevallen Cellar",
+    "id": "WELGEVALLEN_CELLAR",
+    "lat": -33.9395976,
+    "lon": 18.8672093,
+    "name": "Welgevallen Cellar"
+  },
+  {
+    "building": "Welgevallen Community Psychology Clinic",
+    "id": "WELGEVALLEN_COMMUNITY_PSYCHOLOGY_CLINIC",
+    "lat": -33.9396139,
+    "lon": 18.8668639,
+    "name": "Welgevallen Community Psychology Clinic"
+  },
+  {
+    "building": "Paul van der Bijl Laboratories",
+    "id": "PAUL_VAN_DER_BIJL_LABORATORIES",
+    "lat": -33.9398322,
+    "lon": 18.8663524,
+    "name": "Paul van der Bijl Laboratories"
+  },
+  {
+    "building": "Decanting",
+    "id": "DECANTING",
+    "lat": -33.9256169,
+    "lon": 18.865369,
+    "name": "Decanting"
+  },
+  {
+    "building": "Information and Communication Technology",
+    "id": "INFORMATION_AND_COMMUNICATION_TECHNOLOGY",
+    "lat": -33.9246784,
+    "lon": 18.8655897,
+    "name": "Information and Communication Technology"
+  },
+  {
+    "building": "Facilities Management Services",
+    "id": "FACILITIES_MANAGEMENT_SERVICES",
+    "lat": -33.9243589,
+    "lon": 18.8656803,
+    "name": "Facilities Management Services"
+  },
+  {
+    "building": "Facilities Management Store",
+    "id": "FACILITIES_MANAGEMENT_STORE",
+    "lat": -33.9246287,
+    "lon": 18.8659136,
+    "name": "Facilities Management Store"
+  },
+  {
+    "building": "Facilities Management Annex",
+    "id": "FACILITIES_MANAGEMENT_ANNEX",
+    "lat": -33.9252055,
+    "lon": 18.8649441,
+    "name": "Facilities Management Annex"
+  },
+  {
+    "building": "Facilities Management",
+    "id": "FACILITIES_MANAGEMENT",
+    "lat": -33.9243247,
+    "lon": 18.865367,
+    "name": "Facilities Management"
+  },
+  {
+    "building": "Victoria Hub",
+    "id": "VICTORIA_HUB",
+    "lat": -33.9351018,
+    "lon": 18.864556,
+    "name": "Victoria Hub"
+  },
+  {
+    "building": "Maintenance",
+    "id": "MAINTENANCE",
+    "lat": -33.9249069,
+    "lon": 18.8651478,
+    "name": "Maintenance"
+  },
+  {
+    "building": "LaunchLab",
+    "id": "LAUNCHLAB",
+    "lat": -33.9250716,
+    "lon": 18.8657609,
+    "name": "LaunchLab"
+  }
+]
