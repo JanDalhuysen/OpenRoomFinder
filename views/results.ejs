@@ -51,6 +51,8 @@
       <% rooms.forEach(room => { %>
       <li>
         <div class="room-name"><%= room.building %> - <%= room.name %></div>
+        <div class="google-maps"><a href="https://www.google.com/maps/search/<%=
+          room.lat %>,<%= room.lon %>" target="_blank">View on Google Maps</a></div>
         <div class="details">
           Total Walk:
           <strong><%= (room.totalDistance * 1000).toFixed(0) %> meters</strong>
