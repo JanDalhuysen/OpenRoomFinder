@@ -53,7 +53,8 @@ app.post('/find', async (req, res) => {
         // 1. Get current date/time info
         const now = new Date();
         const week = getWeekNumber(now);
-        const day = now.toLocaleDateString('en-US', {weekday : 'long'}); // e.g., "Thursday"
+        // const day = now.toLocaleDateString('en-US', {weekday : 'long'}); // e.g., "Thursday"
+        const day = now.toLocaleDateString('en-US', {weekday : 'short'}); // e.g., "Thu"
         const timeSlot = getCurrentTimeSlot();
 
         if (!timeSlot)
@@ -88,7 +89,7 @@ app.post('/find', async (req, res) => {
             }
         }
 
-        console.log("All rooms found:", allRooms);
+        // console.log("All rooms found:", allRooms);
         const schedulePromises = allRooms.map(room => getRoomSchedule(room.name, week, day));
 
         const schedules = await Promise.all(schedulePromises);
@@ -128,7 +129,7 @@ app.post('/find', async (req, res) => {
 
         // 6. Render the results
         res.render('results', {rooms : rankedRooms, timeSlot});
-        console.log(rankedRooms);
+        // console.log(rankedRooms);
     }
     catch (error)
     {

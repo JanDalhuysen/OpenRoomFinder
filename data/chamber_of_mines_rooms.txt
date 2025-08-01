@@ -1,3 +1,4 @@
+NARGA_D(Geol)_1005
 ChamberOfMines_1004
 ChamberOfMines_1032
 ChamberOfMines_2004
