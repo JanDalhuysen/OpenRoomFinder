@@ -77,11 +77,11 @@
     "name": "Administration A"
   },
   {
-    "building": "Chamber of Mining / Geology",
-    "id": "CHAMBER_OF_MINING_/_GEOLOGY",
+    "building": "Chamber of Mines",
+    "id": "CHAMBER_OF_MINES",
     "lat": -33.9323936,
     "lon": 18.8625132,
-    "name": "Chamber of Mining / Geology"
+    "name": "Chamber of Mines"
   },
   {
     "building": "Natural Science",
