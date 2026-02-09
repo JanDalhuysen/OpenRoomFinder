@@ -43,28 +43,33 @@
 
     <% if (rooms.length > 0) { %>
     <p>
-      Found <%= rooms.length %> empty room(s) for the <%= timeSlot.start %> -
-      <%= timeSlot.end %> slot. They are ranked by the shortest total walking
+      Found <%= rooms.length %> empty room(s) for the <%= timeSlot.start %> - <%= timeSlot.end %> slot. They are ranked by the shortest total walking
       distance.
     </p>
     <ul>
       <% rooms.forEach(room => { %>
       <li>
         <div class="room-name"><%= room.building %> - <%= room.name %></div>
-        <div class="google-maps"><a href="https://www.google.com/maps/search/<%=
-          room.lat %>,<%= room.lon %>" target="_blank">View on Google Maps</a></div>
+        <div class="google-maps">
+          <a
+            href="https://www.google.com/maps/search/<%=
+          room.lat %>,<%= room.lon %>"
+            target="_blank"
+            >View on Google Maps</a
+          >
+        </div>
         <div class="details">
           Total Walk:
-          <strong><%= (room.totalDistance * 1000).toFixed(0) %> meters</strong>
+          <strong
+            ><%= (room.totalDistance * 1000).toFixed(0) %>
+            meters</strong
+          >
         </div>
       </li>
       <% }); %>
     </ul>
     <% } else { %>
-    <p>
-      Sorry, no suitable empty rooms were found for the <%= timeSlot.start %> -
-      <%= timeSlot.end %> slot. 😞
-    </p>
+    <p>Sorry, no suitable empty rooms were found for the <%= timeSlot.start %> - <%= timeSlot.end %> slot. 😞</p>
     <% } %>
 
     <a href="/">&#8592; Try Again</a>

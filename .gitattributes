@@ -1,0 +1,31 @@
+# Handle all text files automatically:
+# Commit as LF, check out as the OS-native ending (CRLF on Win, LF on Linux)
+* text=auto eol=lf
+
+# Explicitly force LF for files that must work on Linux/Mac (like shell scripts)
+*.sh text eol=lf
+
+# Explicitly force CRLF for files that must work on Windows (like batch files)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Mark true binary files to prevent accidental line-ending changes
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.flv binary
+*.fla binary
+*.swf binary
+*.gz binary
+*.zip binary
+*.7z binary
+*.ttf binary
+*.eot binary
+*.woff binary
+*.pyc binary
+*.pdf binary

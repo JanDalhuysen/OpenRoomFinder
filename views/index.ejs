@@ -35,8 +35,7 @@
   <body>
     <h1>Find an Empty Room 📍</h1>
     <p>
-      Select your last class and your next class. The app will find the most
-      convenient empty room for you to use during your off-period right now.
+      Select your last class and your next class. The app will find the most convenient empty room for you to use during your off-period right now.
     </p>
     <form action="/find" method="POST">
       <input type="hidden" name="latitude" id="latitude" />
@@ -44,16 +43,12 @@
       <label for="lastClass">Where was your last class?</label>
       <select name="lastClass" id="lastClass" required>
         <% locations.forEach(loc => { %>
-        <option value="<%= loc.id %>">
-          <%= loc.building %> - <%= loc.name %>
-        </option>
+        <option value="<%= loc.id %>"><%= loc.building %> - <%= loc.name %></option>
         <% }); %>
       </select>
 
       <!-- Add this button -->
-      <button type="button" id="getLocationBtn">
-        📍 Use My Current Location
-      </button>
+      <button type="button" id="getLocationBtn">Use My Current Location</button>
       <p id="locationStatus" style="color: #555"></p>
       <!-- To show status -->
 
@@ -62,9 +57,7 @@
       <label for="nextClass">Where is your next class?</label>
       <select name="nextClass" id="nextClass" required>
         <% locations.forEach(loc => { %>
-        <option value="<%= loc.id %>">
-          <%= loc.building %> - <%= loc.name %>
-        </option>
+        <option value="<%= loc.id %>"><%= loc.building %> - <%= loc.name %></option>
         <% }); %>
       </select>
 
@@ -103,8 +96,7 @@
           lastClassSelect.required = false;
         },
         () => {
-          statusEl.textContent =
-            "Unable to retrieve your location. Please select a building manually.";
+          statusEl.textContent = "Unable to retrieve your location. Please select a building manually.";
           statusEl.style.color = "red";
         },
       );

@@ -224,11 +224,11 @@
     "name": "Industrial Engineering"
   },
   {
-    "building": "Electrical & Electronic Engineering",
+    "building": "Electrical Engineering",
     "id": "ELECTRICAL_&_ELECTRONIC_ENGINEERING",
     "lat": -33.9284441,
     "lon": 18.8666979,
-    "name": "Electrical & Electronic Engineering"
+    "name": "Electrical Engineering"
   },
   {
     "building": "Civil Engineering",

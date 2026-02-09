@@ -2,15 +2,18 @@
 #include <string>
 #include <vector>
 
-std::vector<std::string> extractOptionValues(const std::string& html) {
+std::vector<std::string> extractOptionValues(const std::string &html)
+{
     std::vector<std::string> values;
     std::string::size_type pos = 0;
 
-    while ((pos = html.find("<option value=", pos)) != std::string::npos) {
+    while ((pos = html.find("<option value=", pos)) != std::string::npos)
+    {
         pos += 15; // Move past '<option value="'
         auto endPos = html.find(">", pos);
-        if (endPos != std::string::npos) {
-            values.push_back(html.substr(pos-1, endPos - pos + 1));
+        if (endPos != std::string::npos)
+        {
+            values.push_back(html.substr(pos - 1, endPos - pos + 1));
             pos = endPos;
         }
     }
@@ -18,7 +21,8 @@ std::vector<std::string> extractOptionValues(const std::string& html) {
     return values;
 }
 
-int main() {
+int main()
+{
     std::string html = R"(
 
 
@@ -123,7 +127,8 @@ int main() {
     std::vector<std::string> values = extractOptionValues(html);
 
     // std::cout << "Extracted values:\n";
-    for (const auto& value : values) {
+    for (const auto &value : values)
+    {
         std::cout << value << std::endl;
     }
 
