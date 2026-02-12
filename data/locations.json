@@ -77,11 +77,60 @@
     "name": "Administration A"
   },
   {
+    "building": "NARGA A",
+    "id": "NARGA_A",
+    "lat": -33.9328845,
+    "lon": 18.8631715,
+    "name": "NARGA A"
+  },
+  {
+    "building": "NARGA B",
+    "id": "NARGA_B",
+    "lat": -33.9328845,
+    "lon": 18.8631715,
+    "name": "NARGA B"
+  },
+  {
+    "building": "NARGA O",
+    "id": "NARGA_O",
+    "lat": -33.9328845,
+    "lon": 18.8631715,
+    "name": "NARGA O"
+  },
+  {
     "building": "Chamber of Mines",
     "id": "CHAMBER_OF_MINES",
     "lat": -33.9323936,
     "lon": 18.8625132,
     "name": "Chamber of Mines"
+  },
+  {
+    "building": "NARGA E",
+    "id": "NARGA_E",
+    "lat": -33.9321361,
+    "lon": 18.8632416,
+    "name": "NARGA E"
+  },
+  {
+    "building": "NARGA F",
+    "id": "NARGA_F",
+    "lat": -33.9321361,
+    "lon": 18.8632416,
+    "name": "NARGA F"
+  },
+  {
+    "building": "NARGA G",
+    "id": "NARGA_G",
+    "lat": -33.9321361,
+    "lon": 18.8632416,
+    "name": "NARGA G"
+  },
+  {
+    "building": "NARGA H",
+    "id": "NARGA_H",
+    "lat": -33.9321361,
+    "lon": 18.8632416,
+    "name": "NARGA H"
   },
   {
     "building": "Natural Science",
@@ -105,11 +154,11 @@
     "name": "Krotoa"
   },
   {
-    "building": "GG Cillié",
-    "id": "GG_CILLIé",
+    "building": "GG Cillie",
+    "id": "GG_CILLIE",
     "lat": -33.9328067,
     "lon": 18.8617416,
-    "name": "GG Cillié"
+    "name": "GG Cillie"
   },
   {
     "building": "Ou Hoofgebou",
@@ -224,6 +273,13 @@
     "name": "Industrial Engineering"
   },
   {
+    "building": "Chemical Engineering",
+    "id": "CHEMICAL_ENGINEERING",
+    "lat": -33.9284441,
+    "lon": 18.8666979,
+    "name": "Chemical Engineering"
+  },
+  {
     "building": "Electrical Engineering",
     "id": "ELECTRICAL_&_ELECTRONIC_ENGINEERING",
     "lat": -33.9284441,
@@ -236,6 +292,13 @@
     "lat": -33.927765,
     "lon": 18.8652531,
     "name": "Civil Engineering"
+  },
+  {
+    "building": "Mechanical Engineering",
+    "id": "MECHANICAL_ENGINEERING",
+    "lat": -33.9286525,
+    "lon": 18.8650927,
+    "name": "Mechanical Engineering"
   },
   {
     "building": "Mechanical & Mechatronic Engineering",
