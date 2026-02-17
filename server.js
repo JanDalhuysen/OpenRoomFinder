@@ -3,13 +3,19 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
 const fs = require("fs");
+const multer = require("multer");
 
 const locations = require("./data/locations.json");
 const { getRoomSchedule } = require("./utils/timetable");
-const { haversineDistance, getWeekNumber, getCurrentTimeSlot } = require("./utils/helpers");
+const { haversineDistance, getWeekNumber, getTimeSlotForDate } = require("./utils/helpers");
+const { getScheduleFromIcs } = require("./utils/ics");
 
 const app = express();
 const PORT = 3000;
+const upload = multer({
+  storage: multer.memoryStorage(),
+  limits: { fileSize: 5 * 1024 * 1024 },
+});
 
 // Configure middleware
 app.set("view engine", "ejs");
@@ -24,12 +30,29 @@ app.get("/", (req, res) => {
 });
 
 // Handle the form submission and find rooms
-app.post("/find", async (req, res) => {
+app.post("/find", upload.single("timetable"), async (req, res) => {
   try {
     // const { lastClass: lastClassId, nextClass: nextClassId } = req.body;
     const { lastClass: lastClassId, nextClass: nextClassId, latitude, longitude } = req.body;
 
     let startPoint;
+    let lastClassLocation = null;
+    let nextClassLocation = null;
+    const now = new Date();
+    let scheduleTime = now;
+
+    if (req.file && req.file.buffer && req.file.buffer.length > 0) {
+      const icsText = req.file.buffer.toString("utf-8");
+      const inferred = getScheduleFromIcs(icsText, now, locations);
+      if (inferred.error) {
+        return res.status(400).send(inferred.error);
+      }
+      lastClassLocation = inferred.lastLocation;
+      nextClassLocation = inferred.nextLocation;
+      if (inferred.referenceTime instanceof Date && !Number.isNaN(inferred.referenceTime.valueOf())) {
+        scheduleTime = inferred.referenceTime;
+      }
+    }
 
     // Check if GPS coordinates were provided
     if (latitude && longitude) {
@@ -37,7 +60,10 @@ app.post("/find", async (req, res) => {
       startPoint = { lat: parseFloat(latitude), lon: parseFloat(longitude) };
     } else {
       console.log("Using last class location as starting point.");
-      startPoint = locations.find((loc) => loc.id === lastClassId);
+      if (!lastClassLocation && lastClassId) {
+        lastClassLocation = locations.find((loc) => loc.id === lastClassId);
+      }
+      startPoint = lastClassLocation;
     }
 
     // Check if we have a valid starting point
@@ -48,11 +74,10 @@ app.post("/find", async (req, res) => {
     // const nextClassLocation = locations.find(loc => loc.id === nextClassId);
 
     // 1. Get current date/time info
-    const now = new Date();
-    const week = getWeekNumber(now);
+    const week = getWeekNumber(scheduleTime);
     // const day = now.toLocaleDateString('en-US', {weekday : 'long'}); // e.g., "Thursday"
-    const day = now.toLocaleDateString("en-US", { weekday: "short" }); // e.g., "Thu"
-    const timeSlot = getCurrentTimeSlot();
+    const day = scheduleTime.toLocaleDateString("en-US", { weekday: "short" }); // e.g., "Thu"
+    const timeSlot = getTimeSlotForDate(scheduleTime);
 
     if (!timeSlot) {
       return res.status(400).send("App can only be used between 08:00 and 17:00.");
@@ -97,8 +122,13 @@ app.post("/find", async (req, res) => {
     });
 
     // 4. Find the location objects for the start and end points
-    const lastClassLocation = locations.find((loc) => loc.id === lastClassId);
-    const nextClassLocation = locations.find((loc) => loc.id === nextClassId);
+    if (!nextClassLocation && nextClassId) {
+      nextClassLocation = locations.find((loc) => loc.id === nextClassId);
+    }
+
+    if (!nextClassLocation) {
+      return res.status(400).send("Error: A next class location could not be determined. Please upload a timetable or select a next class.");
+    }
 
     // 5. Rank available rooms by distance
     // const rankedRooms =

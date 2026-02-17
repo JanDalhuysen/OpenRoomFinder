@@ -36,9 +36,8 @@ function getWeekNumber(d) {
  * Maps the current time to a university time slot.
  * Assumes hourly slots from 08:00 to 17:00.
  */
-function getCurrentTimeSlot() {
-  const now = new Date();
-  const hour = now.getHours();
+function getTimeSlotForDate(date) {
+  const hour = date.getHours();
 
   // if (hour < 8 || hour >= 17) return null; // Outside of uni hours
 
@@ -48,8 +47,13 @@ function getCurrentTimeSlot() {
   return { start: startTime, end: endTime };
 }
 
+function getCurrentTimeSlot() {
+  return getTimeSlotForDate(new Date());
+}
+
 module.exports = {
   haversineDistance,
   getWeekNumber,
+  getTimeSlotForDate,
   getCurrentTimeSlot,
 };

@@ -37,9 +37,12 @@
     <p>
       Select your last class and your next class. The app will find the most convenient empty room for you to use during your off-period right now.
     </p>
-    <form action="/find" method="POST">
+    <form action="/find" method="POST" enctype="multipart/form-data">
       <input type="hidden" name="latitude" id="latitude" />
       <input type="hidden" name="longitude" id="longitude" />
+      <label for="timetable">Upload your timetable (.ics) to auto-detect your last and next class</label>
+      <input type="file" id="timetable" name="timetable" accept=".ics,text/calendar" />
+
       <label for="lastClass">Where was your last class?</label>
       <select name="lastClass" id="lastClass" required>
         <% locations.forEach(loc => { %>
@@ -51,8 +54,6 @@
       <button type="button" id="getLocationBtn">Use My Current Location</button>
       <p id="locationStatus" style="color: #555"></p>
       <!-- To show status -->
-
-      <label for="lastClass">Or select where your last class was:</label>
 
       <label for="nextClass">Where is your next class?</label>
       <select name="nextClass" id="nextClass" required>
@@ -70,6 +71,8 @@
     const latInput = document.getElementById("latitude");
     const lonInput = document.getElementById("longitude");
     const lastClassSelect = document.getElementById("lastClass");
+    const nextClassSelect = document.getElementById("nextClass");
+    const timetableInput = document.getElementById("timetable");
 
     getLocationBtn.addEventListener("click", () => {
       if (!navigator.geolocation) {
@@ -100,6 +103,18 @@
           statusEl.style.color = "red";
         },
       );
+    });
+
+    timetableInput.addEventListener("change", () => {
+      const hasFile = timetableInput.files && timetableInput.files.length > 0;
+      lastClassSelect.disabled = hasFile;
+      nextClassSelect.disabled = hasFile;
+      lastClassSelect.required = !hasFile;
+      nextClassSelect.required = !hasFile;
+      if (hasFile) {
+        statusEl.textContent = "Timetable uploaded. Class selection is now optional.";
+        statusEl.style.color = "#555";
+      }
     });
   </script>
 </html>
