@@ -40,6 +40,15 @@
     <form action="/find" method="POST" enctype="multipart/form-data">
       <input type="hidden" name="latitude" id="latitude" />
       <input type="hidden" name="longitude" id="longitude" />
+
+      <label for="timeSlot">Select timeslot to check for open rooms:</label>
+      <select name="timeSlot" id="timeSlot">
+        <option value="">-- Use current time --</option>
+        <% for(let h = 8; h < 17; h++) { %>
+        <option value="<%= String(h).padStart(2, '0') %>:00"><%= String(h).padStart(2, '0') %>:00 - <%= String(h+1).padStart(2, '0') %>:00</option>
+        <% } %>
+      </select>
+
       <label for="timetable">Upload your timetable (.ics) to auto-detect your last and next class</label>
       <input type="file" id="timetable" name="timetable" accept=".ics,text/calendar" />
 

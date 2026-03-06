@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 app.post("/find", upload.single("timetable"), async (req, res) => {
   try {
     // const { lastClass: lastClassId, nextClass: nextClassId } = req.body;
-    const { lastClass: lastClassId, nextClass: nextClassId, latitude, longitude } = req.body;
+    const { lastClass: lastClassId, nextClass: nextClassId, latitude, longitude, timeSlot: selectedTimeSlot } = req.body;
 
     let startPoint;
     let lastClassLocation = null;
@@ -77,7 +77,17 @@ app.post("/find", upload.single("timetable"), async (req, res) => {
     const week = getWeekNumber(scheduleTime);
     // const day = now.toLocaleDateString('en-US', {weekday : 'long'}); // e.g., "Thursday"
     const day = scheduleTime.toLocaleDateString("en-US", { weekday: "short" }); // e.g., "Thu"
-    const timeSlot = getTimeSlotForDate(scheduleTime);
+
+    // Determine timeslot: use selected timeslot or derive from current time
+    let timeSlot;
+    if (selectedTimeSlot && selectedTimeSlot.match(/^\d{2}:\d{2}$/)) {
+      const hour = parseInt(selectedTimeSlot.split(":")[0], 10);
+      const startTime = selectedTimeSlot;
+      const endTime = `${String(hour + 1).padStart(2, "0")}:00`;
+      timeSlot = { start: startTime, end: endTime };
+    } else {
+      timeSlot = getTimeSlotForDate(scheduleTime);
+    }
 
     if (!timeSlot) {
       return res.status(400).send("App can only be used between 08:00 and 17:00.");
