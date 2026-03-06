@@ -81,11 +81,23 @@
     <% if (rooms.length > 0) { %>
     <p>Found <%= rooms.length %> empty room(s) for the <%= timeSlot.start %> - <%= timeSlot.end %> slot, grouped by building.</p>
 
-    <% // Group rooms by building const grouped = {}; rooms.forEach(room => { if (!grouped[room.building]) { grouped[room.building] = { rooms: [],
-    minDistance: Infinity, lat: room.lat, lon: room.lon }; } grouped[room.building].rooms.push(room); if (room.totalDistance <
-    grouped[room.building].minDistance) { grouped[room.building].minDistance = room.totalDistance; } }); // Sort buildings by closest room distance
-    const sortedBuildings = Object.keys(grouped).sort( (a, b) => grouped[a].minDistance - grouped[b].minDistance ); %> <%
-    sortedBuildings.forEach(building => { %>
+    <%
+      // Group rooms by building
+      const grouped = {};
+      rooms.forEach(room => {
+        if (!grouped[room.building]) {
+          grouped[room.building] = { rooms: [], minDistance: Infinity, lat: room.lat, lon: room.lon };
+        }
+        grouped[room.building].rooms.push(room);
+        if (room.totalDistance < grouped[room.building].minDistance) {
+          grouped[room.building].minDistance = room.totalDistance;
+        }
+      });
+      // Sort buildings by closest room distance
+      const sortedBuildings = Object.keys(grouped).sort((a, b) => grouped[a].minDistance - grouped[b].minDistance);
+    %>
+
+    <% sortedBuildings.forEach(building => { %>
     <details class="building-group">
       <summary class="building-name">
         <%= building %>
@@ -101,10 +113,7 @@
           </div>
           <div class="details">
             Total Walk:
-            <strong
-              ><%= (room.totalDistance * 1000).toFixed(0) %>
-              meters</strong
-            >
+            <strong><%= (room.totalDistance * 1000).toFixed(0) %> meters</strong>
           </div>
         </li>
         <% }); %>
@@ -113,9 +122,9 @@
     <% }); %>
 
     <% } else { %>
-    <p>Sorry, no suitable empty rooms were found for the <%= timeSlot.start %> - <%= timeSlot.end %> slot. 😞</p>
+    <p>Sorry, no suitable empty rooms were found for the <%= timeSlot.start %> - <%= timeSlot.end %> slot. :(</p>
     <% } %>
 
-    <a href="/">&#8592; Try Again</a>
+    <a href="/">← Try Again</a>
   </body>
 </html>
