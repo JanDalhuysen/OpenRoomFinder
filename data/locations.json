@@ -915,5 +915,19 @@
     "lat": -33.9250716,
     "lon": 18.8657609,
     "name": "LaunchLab"
+  },
+  {
+    "building": "JC Smuts",
+    "id": "JC_SMUTS",
+    "lat": -33.93117,
+    "lon": 18.86547,
+    "name": "JC Smuts"
+  },
+  {
+    "building": "Knowledge Centre Engineering",
+    "id": "KNOWLEDGE_CENTRE_ENGINEERING",
+    "lat": -33.929339,
+    "lon": 18.865992,
+    "name": "Knowledge Centre Engineering"
   }
 ]
