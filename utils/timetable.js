@@ -1,6 +1,69 @@
 // utils/timetable.js
 const fetch = require("node-fetch");
+const https = require("https");
 const { JSDOM } = require("jsdom");
+
+const FETCH_TIMEOUT_MS = Math.max(3000, parseInt(process.env.TIMETABLE_FETCH_TIMEOUT_MS || "12000", 10));
+const FETCH_RETRIES = Math.max(0, parseInt(process.env.TIMETABLE_FETCH_RETRIES || "2", 10));
+const keepAliveAgent = new https.Agent({
+  keepAlive: true,
+  maxSockets: Math.max(4, parseInt(process.env.TIMETABLE_MAX_SOCKETS || "16", 10)),
+  maxFreeSockets: 4,
+  timeout: 60 * 1000,
+});
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function isRetryableStatus(status) {
+  return status === 429 || status >= 500;
+}
+
+function isRetryableError(error) {
+  if (!error) return false;
+  const retryableCodes = new Set(["ECONNRESET", "ETIMEDOUT", "EAI_AGAIN", "ECONNREFUSED", "ENOTFOUND", "ECONNABORTED"]);
+  return retryableCodes.has(error.code) || error.type === "request-timeout";
+}
+
+async function fetchWithRetry(url, roomName) {
+  let lastError = null;
+
+  for (let attempt = 0; attempt <= FETCH_RETRIES; attempt++) {
+    try {
+      const response = await fetch(url, {
+        timeout: FETCH_TIMEOUT_MS,
+        agent: keepAliveAgent,
+      });
+
+      if (!response.ok) {
+        const err = new Error(`Failed to fetch schedule: ${response.status} ${response.statusText}`);
+        err.status = response.status;
+
+        if (attempt < FETCH_RETRIES && isRetryableStatus(response.status)) {
+          const waitMs = 250 * Math.pow(2, attempt) + Math.floor(Math.random() * 100);
+          await sleep(waitMs);
+          continue;
+        }
+
+        throw err;
+      }
+
+      return response;
+    } catch (error) {
+      lastError = error;
+      if (attempt >= FETCH_RETRIES || !isRetryableError(error)) {
+        break;
+      }
+
+      const waitMs = 250 * Math.pow(2, attempt) + Math.floor(Math.random() * 100);
+      console.warn(`Retrying timetable fetch for ${roomName} (attempt ${attempt + 2}/${FETCH_RETRIES + 1}) after ${error.code || error.message}`);
+      await sleep(waitMs);
+    }
+  }
+
+  throw lastError || new Error(`Unknown fetch error for ${roomName}`);
+}
 
 /**
  * Constructs the correct URL for the Stellenbosch University timetable system.
@@ -54,108 +117,99 @@ async function getRoomSchedule(roomName, week, day) {
 
   // console.log(`Fetching schedule for ${roomName} on ${day} from ${url}`);
 
-  try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Failed to fetch schedule: ${response.status} ${response.statusText}`);
-    }
-    const text = await response.text();
-    const dom = new JSDOM(text);
-    const doc = dom.window.document;
+  const response = await fetchWithRetry(url, roomName);
+  const text = await response.text();
+  const dom = new JSDOM(text);
+  const doc = dom.window.document;
 
-    const tbl = doc.querySelector(".grid-border-args");
-    if (!tbl) {
-      console.warn(`No schedule table found for ${roomName}. The room might not exist or the page structure has changed.`);
-      return []; // Return empty schedule if table not found
-    }
+  const tbl = doc.querySelector(".grid-border-args");
+  if (!tbl) {
+    console.warn(`No schedule table found for ${roomName}. The room might not exist or the page structure has changed.`);
+    return []; // Return empty schedule if table not found
+  }
 
-    // --- Grid parsing logic to handle rowspans and colspans ---
-    const rows = tbl.querySelectorAll("tr");
-    const grid = [];
+  // --- Grid parsing logic to handle rowspans and colspans ---
+  const rows = tbl.querySelectorAll("tr");
+  const grid = [];
 
-    // Initialize grid with empty arrays for each row
-    for (let i = 0; i < rows.length; i++) {
-      grid.push([]);
-    }
+  // Initialize grid with empty arrays for each row
+  for (let i = 0; i < rows.length; i++) {
+    grid.push([]);
+  }
 
-    // Populate the grid, correctly placing cells based on their spans
-    for (let i = 0; i < rows.length; i++) {
-      let gridCol = 0;
-      const cells = rows[i].querySelectorAll("td, th"); // Include th for headers
-      for (let j = 0; j < cells.length; j++) {
-        while (grid[i][gridCol]) {
-          gridCol++; // Skip cells already occupied by a rowspan
-        }
+  // Populate the grid, correctly placing cells based on their spans
+  for (let i = 0; i < rows.length; i++) {
+    let gridCol = 0;
+    const cells = rows[i].querySelectorAll("td, th"); // Include th for headers
+    for (let j = 0; j < cells.length; j++) {
+      while (grid[i][gridCol]) {
+        gridCol++; // Skip cells already occupied by a rowspan
+      }
 
-        const cell = cells[j];
-        const rowspan = parseInt(cell.getAttribute("rowspan") || "1", 10);
-        const colspan = parseInt(cell.getAttribute("colspan") || "1", 10);
+      const cell = cells[j];
+      const rowspan = parseInt(cell.getAttribute("rowspan") || "1", 10);
+      const colspan = parseInt(cell.getAttribute("colspan") || "1", 10);
 
-        // Place the cell and mark all spanned cells as 'occupied'
-        for (let r = 0; r < rowspan; r++) {
-          for (let c = 0; c < colspan; c++) {
-            if (!grid[i + r]) {
-              // Ensure row exists
-              grid[i + r] = [];
-            }
-            if (r === 0 && c === 0) {
-              grid[i + r][gridCol + c] = cell;
-            } else {
-              grid[i + r][gridCol + c] = "occupied";
-            }
+      // Place the cell and mark all spanned cells as 'occupied'
+      for (let r = 0; r < rowspan; r++) {
+        for (let c = 0; c < colspan; c++) {
+          if (!grid[i + r]) {
+            // Ensure row exists
+            grid[i + r] = [];
+          }
+          if (r === 0 && c === 0) {
+            grid[i + r][gridCol + c] = cell;
+          } else {
+            grid[i + r][gridCol + c] = "occupied";
           }
         }
-        gridCol += colspan;
       }
+      gridCol += colspan;
     }
-    // --- End of grid parsing logic ---
-
-    // Find the column index for the requested day from our virtual grid
-    const headerRow = grid[0];
-    let dayColumnIndex = -1;
-    // The days are Mon, Tue, Wed, Thu, Fri, Sat, Sun
-    const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
-    const requestedDayShort = day.toLowerCase().substring(0, 3);
-
-    for (let i = 1; i < headerRow.length; i++) {
-      // Start from 1 to skip time column
-      if (headerRow[i] && typeof headerRow[i] !== "string" && headerRow[i].textContent.trim().toLowerCase().startsWith(requestedDayShort)) {
-        dayColumnIndex = i;
-        break;
-      }
-    }
-
-    if (dayColumnIndex === -1) {
-      console.warn(`Day '${day}' not found in schedule for ${roomName}`);
-      return [];
-    }
-
-    const bookedSlots = [];
-    // Iterate through the grid rows (time slots) to find bookings
-    for (let i = 1; i < grid.length; i++) {
-      // Start from 1 to skip header
-      if (!grid[i] || grid[i].length === 0) continue; // Skip empty or malformed rows
-
-      const timeCell = grid[i][0];
-      const activityCell = grid[i][dayColumnIndex];
-
-      if (!timeCell || typeof timeCell === "string" || !activityCell) continue; // Skip malformed rows
-
-      const time = timeCell.textContent.trim();
-      if (!/^\d{1,2}:\d{2}$/.test(time)) continue; // Ensure it's a valid time cell
-
-      // A cell is booked if it's the start of a booking ('object-cell-border')
-      // or if it's 'occupied' by a rowspan from a previous cell.
-      if (activityCell === "occupied" || (typeof activityCell !== "string" && activityCell.classList.contains("object-cell-border"))) {
-        bookedSlots.push(time);
-      }
-    }
-    // console.log(`Booked slots for ${roomName} on ${day}:`, bookedSlots);
-    return bookedSlots;
-  } catch (error) {
-    console.error(`Error fetching or parsing schedule for ${roomName}:`, error);
-    return []; // Return an empty array on error
   }
+  // --- End of grid parsing logic ---
+
+  // Find the column index for the requested day from our virtual grid
+  const headerRow = grid[0];
+  let dayColumnIndex = -1;
+  // The days are Mon, Tue, Wed, Thu, Fri, Sat, Sun
+  const requestedDayShort = day.toLowerCase().substring(0, 3);
+
+  for (let i = 1; i < headerRow.length; i++) {
+    // Start from 1 to skip time column
+    if (headerRow[i] && typeof headerRow[i] !== "string" && headerRow[i].textContent.trim().toLowerCase().startsWith(requestedDayShort)) {
+      dayColumnIndex = i;
+      break;
+    }
+  }
+
+  if (dayColumnIndex === -1) {
+    console.warn(`Day '${day}' not found in schedule for ${roomName}`);
+    return [];
+  }
+
+  const bookedSlots = [];
+  // Iterate through the grid rows (time slots) to find bookings
+  for (let i = 1; i < grid.length; i++) {
+    // Start from 1 to skip header
+    if (!grid[i] || grid[i].length === 0) continue; // Skip empty or malformed rows
+
+    const timeCell = grid[i][0];
+    const activityCell = grid[i][dayColumnIndex];
+
+    if (!timeCell || typeof timeCell === "string" || !activityCell) continue; // Skip malformed rows
+
+    const time = timeCell.textContent.trim();
+    if (!/^\d{1,2}:\d{2}$/.test(time)) continue; // Ensure it's a valid time cell
+
+    // A cell is booked if it's the start of a booking ('object-cell-border')
+    // or if it's 'occupied' by a rowspan from a previous cell.
+    if (activityCell === "occupied" || (typeof activityCell !== "string" && activityCell.classList.contains("object-cell-border"))) {
+      bookedSlots.push(time);
+    }
+  }
+  // console.log(`Booked slots for ${roomName} on ${day}:`, bookedSlots);
+  return bookedSlots;
 }
 
 /**

@@ -157,27 +157,39 @@ function deriveScheduleFromEvents(events, now) {
   if (currentEvent) {
     const nextEvent = todayEvents.find((event) => event.start >= currentEvent.end);
     if (!nextEvent) {
-      return { error: "Could not find a class after your current class today." };
+      return {
+        error: "Could not find a class after your current class today.",
+      };
     }
 
     const gapMinutes = (nextEvent.start - currentEvent.end) / 60000;
     if (gapMinutes < 60) {
-      return { error: "Your next class starts in less than an hour after your current class ends." };
+      return {
+        error: "Your next class starts in less than an hour after your current class ends.",
+      };
     }
 
-    return { lastEvent: currentEvent, nextEvent, referenceTime: currentEvent.end };
+    return {
+      lastEvent: currentEvent,
+      nextEvent,
+      referenceTime: currentEvent.end,
+    };
   }
 
   const lastEvent = [...todayEvents].filter((event) => event.end <= now).pop();
   const nextEvent = todayEvents.find((event) => event.start >= now);
 
   if (!lastEvent || !nextEvent) {
-    return { error: "Could not find both a previous and upcoming class for today." };
+    return {
+      error: "Could not find both a previous and upcoming class for today.",
+    };
   }
 
   const gapMinutes = (nextEvent.start - now) / 60000;
   if (gapMinutes < 60) {
-    return { error: "Your next class starts in less than an hour, so no free hour is available." };
+    return {
+      error: "Your next class starts in less than an hour, so no free hour is available.",
+    };
   }
 
   return { lastEvent, nextEvent, referenceTime: now };
@@ -186,7 +198,9 @@ function deriveScheduleFromEvents(events, now) {
 function getScheduleFromIcs(icsText, now, locations) {
   const events = parseIcsEvents(icsText);
   if (events.length === 0) {
-    return { error: "No events could be parsed from the uploaded timetable file." };
+    return {
+      error: "No events could be parsed from the uploaded timetable file.",
+    };
   }
 
   const derived = deriveScheduleFromEvents(events, now);
@@ -199,11 +213,15 @@ function getScheduleFromIcs(icsText, now, locations) {
   const nextLocation = matchLocationFromIcs(derived.nextEvent.location, locations, index);
 
   if (!lastLocation) {
-    return { error: `Could not match your last class location (${derived.lastEvent.location}) to a campus building.` };
+    return {
+      error: `Could not match your last class location (${derived.lastEvent.location}) to a campus building.`,
+    };
   }
 
   if (!nextLocation) {
-    return { error: `Could not match your next class location (${derived.nextEvent.location}) to a campus building.` };
+    return {
+      error: `Could not match your next class location (${derived.nextEvent.location}) to a campus building.`,
+    };
   }
 
   return {

@@ -6,16 +6,60 @@ const fs = require("fs");
 const multer = require("multer");
 
 const locations = require("./data/locations.json");
-const { getRoomSchedule } = require("./utils/timetable");
 const { haversineDistance, getWeekNumber, getTimeSlotForDate } = require("./utils/helpers");
 const { getScheduleFromIcs } = require("./utils/ics");
+const { createScheduleCache } = require("./utils/scheduleCache");
 
 const app = express();
 const PORT = 3000;
+const SCHEDULE_REFRESH_MINUTES = Math.max(5, parseInt(process.env.SCHEDULE_REFRESH_MINUTES || "120", 10));
+const SCHEDULE_FETCH_CONCURRENCY = Math.max(1, parseInt(process.env.SCHEDULE_FETCH_CONCURRENCY || "8", 10));
 const upload = multer({
   storage: multer.memoryStorage(),
   limits: { fileSize: 5 * 1024 * 1024 },
 });
+
+function loadAllRooms() {
+  const dataDir = path.join(__dirname, "data");
+  const roomFiles = fs.readdirSync(dataDir).filter((file) => file.endsWith("_rooms.txt"));
+
+  const rooms = [];
+  for (const file of roomFiles) {
+    const buildingName = file.replace("_rooms.txt", "").replace(/_/g, "");
+    const roomNames = fs.readFileSync(path.join(dataDir, file), "utf-8").split("\n").filter(Boolean);
+    const building = locations.find((loc) => loc.building.toLowerCase().replace(" ", "").includes(buildingName.toLowerCase()));
+
+    if (!building) {
+      continue;
+    }
+
+    rooms.push(
+      ...roomNames.map((room) => ({
+        name: room,
+        building: building.building,
+        lat: building.lat,
+        lon: building.lon,
+        id: building.id,
+      })),
+    );
+  }
+
+  return rooms;
+}
+
+const allRooms = loadAllRooms();
+const scheduleCache = createScheduleCache({
+  ttlMs: SCHEDULE_REFRESH_MINUTES * 60 * 1000,
+  concurrency: SCHEDULE_FETCH_CONCURRENCY,
+});
+
+async function refreshCurrentDaySchedules() {
+  const now = new Date();
+  const week = getWeekNumber(now);
+  const day = now.toLocaleDateString("en-US", { weekday: "short" });
+  const result = await scheduleCache.refreshAll(allRooms, week, day);
+  console.log(`Schedule cache refreshed for week ${result.week}, ${result.day}: ${result.roomCount} rooms in ${result.durationMs}ms`);
+}
 
 // Configure middleware
 app.set("view engine", "ejs");
@@ -93,37 +137,8 @@ app.post("/find", upload.single("timetable"), async (req, res) => {
       return res.status(400).send("App can only be used between 08:00 and 17:00.");
     }
 
-    // 2. Fetch all schedules concurrently
-    // console.log(`Fetching schedules for ${day}, week ${week}, slot ${timeSlot.start}...`);
-
-    const dataDir = path.join(__dirname, "data");
-    const roomFiles = fs.readdirSync(dataDir).filter((file) => file.endsWith("_rooms.txt"));
-
-    let allRooms = [];
-    for (const file of roomFiles) {
-      const buildingName = file.replace("_rooms.txt", "").replace(/_/g, "");
-      console.log(`Processing building: ${buildingName}`);
-      const rooms = fs.readFileSync(path.join(dataDir, file), "utf-8").split("\n").filter(Boolean);
-      const building = locations.find((loc) => loc.building.toLowerCase().replace(" ", "").includes(buildingName.toLowerCase()));
-
-      if (building) {
-        allRooms.push(
-          ...rooms.map((room) => ({
-            name: room,
-            building: building.building,
-            lat: building.lat,
-            lon: building.lon,
-            id: building.id,
-          })),
-        );
-      }
-    }
-
-    // console.log("All rooms found:", allRooms);
-    const schedulePromises = allRooms.map((room) => getRoomSchedule(room.name, week, day));
-
-    const schedules = await Promise.all(schedulePromises);
-    console.log("Schedules fetched.");
+    // 2. Fetch schedules from cache (cold entries are fetched on demand)
+    const schedules = await scheduleCache.getSchedulesForRooms(allRooms, week, day);
 
     // 3. Filter for available rooms
     const availableRooms = allRooms.filter((room, index) => {
@@ -174,4 +189,21 @@ app.post("/find", upload.single("timetable"), async (req, res) => {
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
+
+  refreshCurrentDaySchedules().catch((error) => {
+    console.error("Initial schedule cache refresh failed:", error);
+  });
+
+  const refreshTimer = setInterval(
+    () => {
+      refreshCurrentDaySchedules().catch((error) => {
+        console.error("Scheduled cache refresh failed:", error);
+      });
+    },
+    SCHEDULE_REFRESH_MINUTES * 60 * 1000,
+  );
+
+  if (typeof refreshTimer.unref === "function") {
+    refreshTimer.unref();
+  }
 });

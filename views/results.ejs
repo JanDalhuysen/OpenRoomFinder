@@ -82,7 +82,6 @@
     <p>Found <%= rooms.length %> empty room(s) for the <%= timeSlot.start %> - <%= timeSlot.end %> slot, grouped by building.</p>
 
     <%
-      // Group rooms by building
       const grouped = {};
       rooms.forEach(room => {
         if (!grouped[room.building]) {
@@ -93,7 +92,6 @@
           grouped[room.building].minDistance = room.totalDistance;
         }
       });
-      // Sort buildings by closest room distance
       const sortedBuildings = Object.keys(grouped).sort((a, b) => grouped[a].minDistance - grouped[b].minDistance);
     %>
 
