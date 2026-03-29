@@ -1,7 +1,7 @@
 {
-  "name": "OpenRoomFinder",
+  "name": "openroomfinder",
   "version": "1.0.0",
-  "description": "",
+  "description": "A web application that helps you find available rooms on a campus based on your current location, timetable, and time slot.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,11 +21,11 @@
   "homepage": "https://github.com/JanDalhuysen/OpenRoomFinder#readme",
   "dependencies": {
     "body-parser": "^2.2.2",
-    "ejs": "^3.0.2",
+    "ejs": "^5.0.1",
     "express": "^5.2.1",
-    "jsdom": "^28.1.0",
-    "multer": "^2.0.2",
-    "node-fetch": "^2.7.0"
+    "jsdom": "^29.0.1",
+    "multer": "^2.1.1",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "prettier": "^3.8.1",
